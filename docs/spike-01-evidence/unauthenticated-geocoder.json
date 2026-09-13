@@ -1,0 +1,23 @@
+{
+  "tested_at": "2026-09-11T15:36:41.643022+00:00",
+  "key_provided": false,
+  "tool": "geocoder",
+  "arguments": {
+    "address": "北京市朝阳区东坝"
+  },
+  "elapsed_ms": 197,
+  "response": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Invalid Key",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structured_content": null,
+    "is_error": true,
+    "result_type": "complete"
+  }
+}

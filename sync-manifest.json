@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "d2073fec0e8b59553d4cefa4f80ec51d4e5a6236e67b3458d819b48d40015273"
+    },
+    {
+      "path": "docs/project-status.md",
+      "sha256": "55d136dc07666c201700597fe55b3462ddcdf041c27b2f612a10a03ef02f5e2c"
+    },
+    {
+      "path": "docs/spike-01-evidence/authenticated-geocoder.json",
+      "sha256": "ebd19232d56f8a3d9ef4c86854aa2b143cc3b46bbd6ab2e699aa30486c8059a1"
+    },
+    {
+      "path": "docs/spike-01-evidence/authenticated-route-and-poi.json",
+      "sha256": "02eb570c5689cde076f7d0c038dda554d4e9df25255c53aea0b4368bdfa1a5b7"
+    },
+    {
+      "path": "docs/spike-01-evidence/dependencies.txt",
+      "sha256": "33ba704e7ec58cdffd5445bc8031bda678042da77198947b2074bbf43cf03a10"
+    },
+    {
+      "path": "docs/spike-01-evidence/unauthenticated-geocoder.json",
+      "sha256": "3f26d9e2e9f22c9ae24d2db17402720300745cde59b3b034fb6bf191540b20bb"
+    },
+    {
+      "path": "docs/spike-01-evidence/unauthenticated-mcp.json",
+      "sha256": "d5651e2480e0b4dbe88fa7256b42936b8cf0f0f626f8f5c9b8a62dcda9ad586e"
+    },
+    {
+      "path": "docs/spike-01-evidence/verified-poi-route.json",
+      "sha256": "67559ffac6111b48fa2e8785b70cb7ff157540fc886d29c505f701a10c02ce21"
+    },
+    {
+      "path": "docs/technical-spike-01.md",
+      "sha256": "2560841666842206db696239d98dd92702829c0a7d862fef352a8c7ecb973196"
+    }
+  ]
+}
