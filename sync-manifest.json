@@ -2,11 +2,27 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "d2073fec0e8b59553d4cefa4f80ec51d4e5a6236e67b3458d819b48d40015273"
+      "sha256": "8f2109616c8aa9628cbc1332d245be922accf761d48873e81d7ff7f0a2fd1f52"
+    },
+    {
+      "path": "docs/00-project-charter.md",
+      "sha256": "bac566747816e4a1ea810288c76a4eca8bf8dc0df913ec1aee398f95f9fb3b26"
+    },
+    {
+      "path": "docs/01-user-journey.md",
+      "sha256": "2fb6fef9e6b29756ed1f996c221b4f611703cad87282b0afc3ca9aa194398d28"
+    },
+    {
+      "path": "docs/02-prd.md",
+      "sha256": "3ae18ae509823caa34ed8a771a9e66b28228e27cfc89af1104bd895ed610b351"
+    },
+    {
+      "path": "docs/03-technical-design.md",
+      "sha256": "07a53fcb9b791e418816312aa39bc80243d93979e4e350d9c4692d0e45693f54"
     },
     {
       "path": "docs/project-status.md",
-      "sha256": "55d136dc07666c201700597fe55b3462ddcdf041c27b2f612a10a03ef02f5e2c"
+      "sha256": "e8e35cc0c8e2fd80498e23f27b2220bb151d1ea265c107c610e2f4ca83b71260"
     },
     {
       "path": "docs/spike-01-evidence/authenticated-geocoder.json",
