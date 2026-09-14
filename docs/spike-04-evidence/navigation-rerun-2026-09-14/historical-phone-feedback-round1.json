@@ -1,0 +1,22 @@
+{
+  "source": "user report and screenshot in this task",
+  "browser": "after leaving WeChat; exact browser not specified",
+  "os_version": null,
+  "map_versions": null,
+  "amap": {
+    "segment_app": "endpoints received",
+    "web": "route displayed; app endpoints received",
+    "full_app": "all fixture waypoints received; exact order and navigation start not explicitly confirmed"
+  },
+  "tencent": {
+    "segment_app": "endpoints received",
+    "web": "route displayed; onward app/miniprogram loses endpoints"
+  },
+  "baidu": {
+    "segment_app": "Baidu app endpoints received; user corrected initial app name",
+    "web": "failed: nearby services page"
+  },
+  "actual_navigation_started": null,
+  "trip_id_explicitly_checked": false,
+  "provenance_note": "Historical local record dated 2026-09-12; original conversation/attachments not independently re-read this run; not new user confirmation."
+}

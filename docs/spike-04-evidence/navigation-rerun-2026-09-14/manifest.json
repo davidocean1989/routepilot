@@ -1,0 +1,77 @@
+{
+  "scope": "Spike 04 navigation archive",
+  "files": [
+    {
+      "path": "docs/technical-spike-04.md",
+      "sha256": "c8142eb9a5dda90ada0d2ac03e27083fb209185e037e8e60f8e4f46ca2d1500f"
+    },
+    {
+      "path": "docs/spike-04-evidence/navigation-rerun-2026-09-14/delivery-checks.json",
+      "sha256": "9296c2601c83531d89ba2e6c981d18dae1c07d3093824438513f542b666f1e23"
+    },
+    {
+      "path": "docs/spike-04-evidence/navigation-rerun-2026-09-14/final-archive-summary.md",
+      "sha256": "02304e7daddd76ebadd38a7b178c66e9938eed16bcd69028f4c93bbcb68d460a"
+    },
+    {
+      "path": "docs/spike-04-evidence/navigation-rerun-2026-09-14/historical-final-confirmation.json",
+      "sha256": "da609aa79c62e65ea34ef7a8abd428f957409ddd8c60b2b522b40e71088d8f48"
+    },
+    {
+      "path": "docs/spike-04-evidence/navigation-rerun-2026-09-14/historical-phone-feedback-round1.json",
+      "sha256": "0d26b5ae98b3e9ec8aca182a027b4e9694a2448b7c007e0596ac5af57bfc2c84"
+    },
+    {
+      "path": "docs/spike-04-evidence/navigation-rerun-2026-09-14/local-tests.json",
+      "sha256": "b0d8324276c0304edbd44eab00a4033fd57d1c89e9c06080cdd487af8a773e54"
+    },
+    {
+      "path": "docs/spike-04-evidence/navigation-rerun-2026-09-14/official-sources.json",
+      "sha256": "8c450c58470eda6f98c2eff0ce1ee0cf7f9ad44f4b8ac524e961ce960e9738ca"
+    },
+    {
+      "path": "docs/spike-04-evidence/navigation-rerun-2026-09-14/previous-report.md",
+      "sha256": "23cc2d65b5efffb095a57d8d525d46b35e7360a937a9415febfeb55ab4af698e"
+    },
+    {
+      "path": "docs/spike-04-evidence/navigation-rerun-2026-09-14/tested-files.json",
+      "sha256": "28822179b230b7db38b664d98a6372c1cebe89b2ca853b58779144640eb336be"
+    },
+    {
+      "path": "routepilot-nav-test/dist/navigation04.js",
+      "sha256": "406f8372394fc45848e590fde0a98b5268a90c133ff26c1906cbd4b2e32c64fa"
+    },
+    {
+      "path": "routepilot-nav-test/dist/spike04.js",
+      "sha256": "64c94ebb4afee01b6021857ef8495622909e2e1c9215cab195ca00d5687b53b5"
+    },
+    {
+      "path": "routepilot-nav-test/dist/spike04.html",
+      "sha256": "f0344b897c517bd74abdd3eef637dbe4f63fec7de0f8e7a9a3b76f3652671e38"
+    },
+    {
+      "path": "routepilot-nav-test/dist/style.css",
+      "sha256": "ad50632704c70bd33c6763bb57057c6fde7ee22b5806b8f63e4857b99999272d"
+    },
+    {
+      "path": "routepilot-nav-test/tests/navigation04.cjs",
+      "sha256": "42300988760a554fc8bcab35f4ce67644c9fdc785535f0fd7071a304f05e43a4"
+    },
+    {
+      "path": "routepilot-nav-test/tests/page04-feedback.cjs",
+      "sha256": "0242745deff689a905b47df91a08989e7af2ca5e5389b026a2e24b5dde2dc4dd"
+    },
+    {
+      "path": "docs/spike-04-evidence/navigation-rerun-2026-09-14/github-archive-note.md",
+      "sha256": "3d44ca86c3218aaa3bfa9d5b0e82a9fd3e64730910ab73eb25a34a2cf57bdfda"
+    },
+    {
+      "path": "docs/project-status.md",
+      "sha256": "83d15c13828d53216379ed30607bb28bbd13bf7101671f6647b4702ba376d68c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "81acc10a9b57783f52a021a30b514a2056ee53951b00fa1e389c8b361405c965"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source": "user confirmation in current task",
+  "confirmed_at": "2026-09-12",
+  "route": [
+    "杭州",
+    "乌镇",
+    "南浔",
+    "西塘",
+    "上海"
+  ],
+  "provider": "amap",
+  "waypoints": 3,
+  "order_preserved": true,
+  "navigation_started": true,
+  "evidence_type": "user_report",
+  "os_version": null,
+  "map_version": null,
+  "browser": "从微信跳出后使用的浏览器，具体名称未提供",
+  "scope": "固定5站/3途经点样本；不代表最大容量或所有平台兼容",
+  "task_status": "archived by user request",
+  "provenance_note": "Historical local record dated 2026-09-12; original conversation/attachments not independently re-read this run; not new user confirmation."
+}

@@ -20,3 +20,9 @@ RoutePilot 是 Davidocean · AI Career 项目中的多地点出行路线规划�
 Spike 02–04：本次重跑版本为 rebuilding / pending archive。本地存在历史实验报告及部分归档摘要，尚待核对是否对应本次重跑，不据此宣称本次重跑完成。
 
 原始本地归档与回传文件均保留。文件 SHA-256 校验值见 [sync-manifest.json](sync-manifest.json)。
+
+## Spike 04 导航归档（2026-09-14）
+
+[正式报告](docs/technical-spike-04.md) · [证据](docs/spike-04-evidence/navigation-rerun-2026-09-14/) · [Final Archive Summary](docs/spike-04-evidence/navigation-rerun-2026-09-14/final-archive-summary.md)
+
+本项已归档，技术结论PARTIAL；取代上文Spike 04 pending状态。无新增真机测试，未启动Spike 06。

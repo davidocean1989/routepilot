@@ -1,0 +1,54 @@
+{
+  "reviewed_on": "2026-09-14",
+  "method": "web tool official pages; paraphrased observations, not raw snapshots",
+  "sources": [
+    {
+      "id": "T1",
+      "url": "https://lbs.qq.com/webApi/uriV1/uriGuide/uriMobileRoute",
+      "retrieval": "success",
+      "observation": "App qqmap routeplan; passes up to 15 waypoints; lat,lng; each waypoint ends with |; referer required. Supersedes historical unknown capability."
+    },
+    {
+      "id": "T2",
+      "url": "https://lbs.qq.com/uri_v1/guide-route.html",
+      "retrieval": "success",
+      "observation": "Web routeplan endpoint fields and coordinate type; no waypoint field found in reviewed table."
+    },
+    {
+      "id": "T0",
+      "url": "https://lbs.qq.com/uri_v1/guide-mobile-navAndRoute.html",
+      "retrieval": "fetch_error",
+      "observation": "Old App URL failed; followed current App link from official Web document to T1."
+    },
+    {
+      "id": "A1",
+      "url": "https://lbs.amap.com/api/uri-api/guide/travel/route",
+      "retrieval": "success",
+      "observation": "Web via at most one driving waypoint; callnative may fail inside WeChat/QQ."
+    },
+    {
+      "id": "A2",
+      "url": "https://lbs.amap.com/api/amap-mobile/guide/android/route",
+      "retrieval": "success",
+      "observation": "amapuri route plan; vian/vialons/vialats/vianames; no numeric waypoint maximum stated; m ignored from Android 7.5.9."
+    },
+    {
+      "id": "A3",
+      "url": "https://lbs.amap.com/api/amap-mobile/guide/ios/route",
+      "retrieval": "success",
+      "observation": "iosamap path; same waypoint fields; no numeric maximum stated; m ignored from iOS 7.7.4."
+    },
+    {
+      "id": "B1",
+      "url": "https://lbsyun.baidu.com/docs/webapi?title=mapadjustment/uri/andriod",
+      "retrieval": "success",
+      "observation": "H5 bdapp direction; viaPoints encoded JSON; nested example under navi, direction reception unverified; no numeric limit confirmed."
+    },
+    {
+      "id": "B2",
+      "url": "https://lbsyun.baidu.com/docs/webapi?title=mapadjustment/uri/ios",
+      "retrieval": "success",
+      "observation": "iOS baidumap direction; multi-waypoint contract not confirmed in reviewed page."
+    }
+  ]
+}

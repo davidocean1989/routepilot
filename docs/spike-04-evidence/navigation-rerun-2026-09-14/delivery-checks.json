@@ -1,0 +1,8 @@
+{
+  "report_exists": true,
+  "all_report_local_links_resolve": true,
+  "tested_code_unchanged": true,
+  "both_test_exit_codes_zero": true,
+  "credential_pattern_scan": "no matches; heuristic check",
+  "spike06_started": false
+}

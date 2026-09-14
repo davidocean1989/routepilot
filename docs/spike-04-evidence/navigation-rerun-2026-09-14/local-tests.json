@@ -1,0 +1,20 @@
+{
+  "time": "2026-09-14T11:14:42.713860+00:00",
+  "platform": "macOS-15.7.9-x86_64-i386-64bit",
+  "node": "v24.19.0",
+  "type": "local Node VM and simulated DOM; not browser or phone",
+  "results": [
+    {
+      "test": "tests/navigation04.cjs",
+      "exit_code": 0,
+      "stdout": "PASS: 24 segment links, OS schemes, ordered full-route payloads, unsupported routes, unknown/duplicate trip IDs, share continuity. No phone navigation tested.\n",
+      "stderr": ""
+    },
+    {
+      "test": "tests/page04-feedback.cjs",
+      "exit_code": 0,
+      "stdout": "PASS: full page map switching, correct schemes and labels, full-route eligibility, failed-web demotion and share-map persistence (DOM harness, not phone).\n",
+      "stderr": ""
+    }
+  ]
+}
