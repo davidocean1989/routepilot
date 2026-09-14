@@ -1,0 +1,42 @@
+[
+  {
+    "path": "docs/technical-spike-02.md",
+    "sha256": "3b67f8f5b1d3c8be84c7e056351dca3a163992f02a2c95a517dfd772bd985b03"
+  },
+  {
+    "path": "docs/spike-02-evidence/spike-03-input.json",
+    "sha256": "af93e6d9b7159220ca3fe49a1da9a91c2a3d89bea5c9bff145057aa74b39b4e7"
+  },
+  {
+    "path": "docs/spike-02-evidence/chunked.json",
+    "sha256": "127f2e73a2b72ec2c7529afc14636d4b4514df717155bfd26d14923d288931f0"
+  },
+  {
+    "path": "docs/spike-02-evidence/verification-summary.json",
+    "sha256": "644d131c7b7fcb143705a48664e2e6ce960c41ab5c0926bbfa01e6ab78f07bf8"
+  },
+  {
+    "path": "docs/spike-02-evidence/points.json",
+    "sha256": "f6ec70f3f27447ed490da2c02bf1fdc353d7dbc534fe0131a37226d0453f5d26"
+  },
+  {
+    "path": "docs/spike-02-evidence/future-departure.json",
+    "sha256": "a9468535631b1eb190820a20cc899dcd54d14f0f5a7253f7f1f3e8908f9e9653"
+  },
+  {
+    "path": "docs/spike-02-evidence/matrix.json",
+    "sha256": "06f45a84e8859db7a005833a6d957fd663638723d1ead75d380bd287fea3d160"
+  },
+  {
+    "path": "docs/spike-02-evidence/errors-limits.json",
+    "sha256": "147a0ba700589c705bb142fcbfc17bf3cd909a76f1c225f596e8917740a2f4e1"
+  },
+  {
+    "path": "docs/spike-02-evidence/recovery.json",
+    "sha256": "2de609dd8737c2bb25e8d60a3558c06e3b404841585b05c161fb0beb307767dd"
+  },
+  {
+    "path": "docs/spike-02-evidence/poi.json",
+    "sha256": "54c7b0687e9d3f4c959e4cdf02e26f8b2e2fac37d210ea5837febcd7fef2f105"
+  }
+]

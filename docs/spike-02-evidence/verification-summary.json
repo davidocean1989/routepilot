@@ -1,0 +1,13 @@
+{
+  "chunked_success": 10,
+  "distance_changed_pairs": 0,
+  "duration_changed_pairs": 16,
+  "max_duration_change_s": 131,
+  "latency_ms": {
+    "min": 94,
+    "median": 146.5,
+    "max": 437
+  },
+  "asymmetric_distance_pairs": 10,
+  "asymmetric_duration_pairs": 10
+}

@@ -1,0 +1,120 @@
+{
+  "started_at": "2026-09-11T16:04:13.086477+00:00",
+  "transport": "SSE",
+  "format": 1,
+  "events": [
+    {
+      "tool": "matrix",
+      "arguments": {
+        "mode": "driving",
+        "from": "30.291331,120.212998;30.869188,120.430771;30.745906,120.48884;30.93898,120.888689;31.194106,121.320666",
+        "to": "30.291331,120.212998;30.869188,120.430771;30.745906,120.48884;30.93898,120.888689;31.194106,121.320666"
+      },
+      "sent_at": "2026-09-11T16:04:13.467833+00:00",
+      "elapsed_ms": 406,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":120,\"message\":\"此key每秒请求量已达到上限\",\"request_id\":\"dc66c68aabb9476e9892a8b3f2f22e3b\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "mode": "driving",
+        "from": "30.291331,120.212998;30.869188,120.430771;30.745906,120.48884;30.93898,120.888689;31.194106,121.320666",
+        "to": "30.291331,120.212998;30.869188,120.430771;30.745906,120.48884;30.93898,120.888689;31.194106,121.320666"
+      },
+      "sent_at": "2026-09-11T16:04:18.874954+00:00",
+      "elapsed_ms": 113,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":120,\"message\":\"此key每秒请求量已达到上限\",\"request_id\":\"fb6fbbd85bda4efea70398f5a6274a51\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "mode": "driving",
+        "from": "30.291331,120.212998;30.869188,120.430771",
+        "to": "30.745906,120.48884;30.93898,120.888689;31.194106,121.320666"
+      },
+      "sent_at": "2026-09-11T16:04:23.988870+00:00",
+      "elapsed_ms": 165,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":120,\"message\":\"此key每秒请求量已达到上限\",\"request_id\":\"d3a0754b18434fcb957bbe97ffe7f61e\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    }
+  ],
+  "server": {
+    "meta": null,
+    "protocol_version": "2025-11-25",
+    "capabilities": {
+      "experimental": null,
+      "logging": null,
+      "prompts": {
+        "list_changed": false
+      },
+      "resources": null,
+      "tools": {
+        "list_changed": false
+      },
+      "completions": null,
+      "extensions": null,
+      "tasks": {
+        "list": null,
+        "cancel": null,
+        "requests": null
+      }
+    },
+    "server_info": {
+      "name": "TencentMapMCPWebService",
+      "title": "Tencent Map LBS MCP Service",
+      "version": "1.2.0",
+      "description": "Welcome to Tencent Map LBS MCP Service!",
+      "website_url": "https://lbs.qq.com",
+      "icons": [
+        {
+          "src": "https://mapapi.qq.com/web/lbs/logo/favicon.ico",
+          "mime_type": "image/vnd.microsoft.icon",
+          "sizes": [
+            "100*72"
+          ],
+          "theme": null
+        }
+      ]
+    },
+    "instructions": null
+  },
+  "finished_at": "2026-09-11T16:04:29.157284+00:00"
+}

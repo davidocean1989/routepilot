@@ -1,0 +1,61 @@
+{
+  "files": [
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/analyze.py",
+      "sha256": "2c5e8927d6fbe836677e2506c4a8c7958207671e8f0b9225ad5a459b4eebf142"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/assembled-matrix.json",
+      "sha256": "5e77bf15ee45139c77ee3b26a6fc6c397c43af393729e2481588edd712e2bf52"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/final-archive-summary.md",
+      "sha256": "8947c0898903a1c70e94b0f5776bd38241fa1f8f52939d4080e35aed7375f49e"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/first-authenticated-attempt.json",
+      "sha256": "8e57acd404b86945d0e115e489a938936e0f381ba9285aa3358e869d10b15de6"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/live-probe.json",
+      "sha256": "a974608025eba64c33a05c52d02b1d28694d4afcdbe8e5481fa0fb3f7a9e48f6"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/previous-partial-report.md",
+      "sha256": "df07bd1c86b469024e0f716bb53f61284095a4c9f0271b2740b734da4a86210f"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/recovery-probe.json",
+      "sha256": "6659383100c753e718f0349d9fb8f58120e27d09a65c133ade30cb5ea6b3250c"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/run_probe.py",
+      "sha256": "c9faf6ed4000525f090835d07878e2ce102370e84ffb3a6776c0228d1a717ac2"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/run_recovery.py",
+      "sha256": "973309a185f2d7b98fce648347ef69ea4bb686bb75816cf25aad95414ec994f9"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/sandbox-network-attempt.json",
+      "sha256": "48722023ac6ddd4ef22d79533f3788a8481d6f44971fa8325ca72734ee6d87ec"
+    },
+    {
+      "path": "docs/spike-02-evidence/supplement-2026-09-14/verification-summary.json",
+      "sha256": "091749fd93ff51f4d1e4027162172d4c5d3f5da86da8978a830b6f1da9c8c73a"
+    },
+    {
+      "path": "docs/technical-spike-02.md",
+      "sha256": "3d52f5c8e281cc4241084df9bedcfd0e7b5db01a035d79d3f246660c0e9cf09e"
+    }
+  ],
+  "checks": {
+    "credential_pattern_scan": "PASS",
+    "matrix_cells": 25,
+    "directed_non_diagonal_edges": 20,
+    "asymmetric_pairs": 10,
+    "business_120_count": 11,
+    "history_preserved": true
+  },
+  "scope": "Local Spike 02 supplement only; no commit or push"
+}

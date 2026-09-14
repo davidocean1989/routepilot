@@ -1,0 +1,288 @@
+{
+  "started_at": "2026-09-11T16:07:00.725184+00:00",
+  "transport": "SSE",
+  "format": 1,
+  "events": [
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "30.291331,120.212998",
+        "to": "30.869188,120.430771;30.745906,120.48884;30.93898,120.888689;31.194106,121.320666",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:01.196105+00:00",
+      "elapsed_ms": 437,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"0d25c450871b4ab79039922204f7ba8e\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":84018,\"duration\":4349},{\"distance\":70447,\"duration\":3782},{\"distance\":116429,\"duration\":4802},{\"distance\":162574,\"duration\":6500}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "30.869188,120.430771",
+        "to": "30.291331,120.212998;30.745906,120.48884;30.93898,120.888689;31.194106,121.320666",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:03.633621+00:00",
+      "elapsed_ms": 152,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"4b1cb85c8c5d4b59a0aedad102e4da89\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":83112,\"duration\":4403},{\"distance\":18225,\"duration\":1792},{\"distance\":57720,\"duration\":3471},{\"distance\":109904,\"duration\":4762}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "30.745906,120.48884",
+        "to": "30.291331,120.212998;30.869188,120.430771;30.93898,120.888689;31.194106,121.320666",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:05.786358+00:00",
+      "elapsed_ms": 141,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"9f3da2636f0741c287cd6b1487b83e77\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":69962,\"duration\":4114},{\"distance\":17891,\"duration\":1759},{\"distance\":54510,\"duration\":2755},{\"distance\":119088,\"duration\":4913}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "30.93898,120.888689",
+        "to": "30.291331,120.212998;30.869188,120.430771;30.745906,120.48884;31.194106,121.320666",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:07.927259+00:00",
+      "elapsed_ms": 94,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"d753c93f7a3f462b9999339ed23d4c40\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":115751,\"duration\":6542},{\"distance\":56702,\"duration\":3472},{\"distance\":56209,\"duration\":2745},{\"distance\":72948,\"duration\":3178}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "31.194106,121.320666",
+        "to": "30.291331,120.212998;30.869188,120.430771;30.745906,120.48884;30.93898,120.888689",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:10.022355+00:00",
+      "elapsed_ms": 103,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"2550c07acee24827a7b71103734227dd\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":161182,\"duration\":7130},{\"distance\":109431,\"duration\":4896},{\"distance\":120383,\"duration\":5068},{\"distance\":71626,\"duration\":3071}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "30.291331,120.212998",
+        "to": "30.869188,120.430771;30.745906,120.48884;30.93898,120.888689;31.194106,121.320666",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:12.125883+00:00",
+      "elapsed_ms": 284,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"61f430f2750e4c22afdc284cc3f18e9c\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":84018,\"duration\":4349},{\"distance\":70447,\"duration\":3782},{\"distance\":116429,\"duration\":4802},{\"distance\":162574,\"duration\":6499}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "30.869188,120.430771",
+        "to": "30.291331,120.212998;30.745906,120.48884;30.93898,120.888689;31.194106,121.320666",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:14.410362+00:00",
+      "elapsed_ms": 99,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"71ad5e33c8ef45a4af182fd4be12b5fd\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":83112,\"duration\":4534},{\"distance\":18225,\"duration\":1811},{\"distance\":57720,\"duration\":3476},{\"distance\":109904,\"duration\":4759}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "30.745906,120.48884",
+        "to": "30.291331,120.212998;30.869188,120.430771;30.93898,120.888689;31.194106,121.320666",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:16.510102+00:00",
+      "elapsed_ms": 157,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"5cf0063952e0433c90ad99c1f8a370ce\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":69962,\"duration\":4058},{\"distance\":17891,\"duration\":1712},{\"distance\":54510,\"duration\":2753},{\"distance\":119088,\"duration\":4904}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "30.93898,120.888689",
+        "to": "30.291331,120.212998;30.869188,120.430771;30.745906,120.48884;31.194106,121.320666",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:18.667659+00:00",
+      "elapsed_ms": 232,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"a87ef7b1a57840cc96c2d3de1c182475\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":115751,\"duration\":6542},{\"distance\":56702,\"duration\":3477},{\"distance\":56209,\"duration\":2735},{\"distance\":72948,\"duration\":3156}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "matrix",
+      "arguments": {
+        "from": "31.194106,121.320666",
+        "to": "30.291331,120.212998;30.869188,120.430771;30.745906,120.48884;30.93898,120.888689",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-11T16:07:20.900177+00:00",
+      "elapsed_ms": 99,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"e0cbfd95cd13431c9b326a7257432b7f\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":161182,\"duration\":7142},{\"distance\":109431,\"duration\":4880},{\"distance\":120383,\"duration\":4988},{\"distance\":71626,\"duration\":3079}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    }
+  ],
+  "server": {
+    "meta": null,
+    "protocol_version": "2025-11-25",
+    "capabilities": {
+      "experimental": null,
+      "logging": null,
+      "prompts": {
+        "list_changed": false
+      },
+      "resources": null,
+      "tools": {
+        "list_changed": false
+      },
+      "completions": null,
+      "extensions": null,
+      "tasks": {
+        "list": null,
+        "cancel": null,
+        "requests": null
+      }
+    },
+    "server_info": {
+      "name": "TencentMapMCPWebService",
+      "title": "Tencent Map LBS MCP Service",
+      "version": "1.2.0",
+      "description": "Welcome to Tencent Map LBS MCP Service!",
+      "website_url": "https://lbs.qq.com",
+      "icons": [
+        {
+          "src": "https://mapapi.qq.com/web/lbs/logo/favicon.ico",
+          "mime_type": "image/vnd.microsoft.icon",
+          "sizes": [
+            "100*72"
+          ],
+          "theme": null
+        }
+      ]
+    },
+    "instructions": null
+  },
+  "finished_at": "2026-09-11T16:07:23.002193+00:00"
+}

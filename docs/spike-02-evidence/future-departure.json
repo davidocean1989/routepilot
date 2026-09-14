@@ -1,0 +1,72 @@
+{
+  "started_at": "2026-09-12T01:17:18.996702+00:00",
+  "transport": "SSE",
+  "format": 1,
+  "events": [
+    {
+      "tool": "futureDrivingDirection",
+      "arguments": {
+        "from": "30.291331,120.212998",
+        "to": "30.745906,120.48884",
+        "departure_time": "1789261200"
+      },
+      "sent_at": "2026-09-12T01:17:19.767336+00:00",
+      "elapsed_ms": 435,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"955650a1f8234f6da2c0a9be2b9b7f39\",\"result\":{\"routes\":[{\"mode\":\"DRIVING\",\"distance\":70827,\"duration\":68,\"traffic_light_count\":10,\"toll\":28,\"restriction\":{\"status\":1},\"polyline\":[30.29189,120.212526,994,1578,0,0,140,152,150,37,0,0,227,-102,928,-881,1038,-887,255,-130,192,90,0,0,592,897,0,0,109,32,90,-185,842,-2183,433,-803,441,-676,0,0,1093,1548,325,416,98,64,378,521,712,1013,189,340,243,525,355,968,0,0,121,85,656,-406,361,-165,544,-176,576,-93,1385,-56,0,0,202,134,22,1247,0,0,9,460,-40,315,43,2384,29,394,69,121,16,1161,-63,8226,0,0,-102,279,-140,4565,-121,742,-121,404,0,0,-163,385,-629,847,-94,177,-109,281,-60,304,-3,343,55,327,224,494,227,272,260,195,373,143,927,48,542,137,383,194,1589,1072,472,273,789,419,169,-5,5328,3559,2103,1513,0,0,1852,1458,1771,1530,1705,1600,1117,1124,1251,1335,1552,1780,498,618,833,1165,328,525,414,531,0,0,918,1118,1294,1402,9960,12565,0,0,1425,1691,827,842,741,684,1491,1187,719,485,556,260,0,0,1060,301,1571,248,1102,281,878,393,2049,1214,714,319,12376,4157,1249,463,899,484,822,619,876,862,484,639,359,558,999,1831,1438,1706,987,1369,6074,9442,2474,3959,1465,2564,689,1315,1218,2513,1410,3308,4329,11314,1277,3109,966,2153,967,2016,1123,2189,1091,1989,1501,2551,1641,2572,4501,6449,7373,10436,1621,2393,1132,1788,1703,2917,1629,3038,5521,11346,921,1828,1103,1955,1250,1929,1595,2134,1336,1551,1180,1225,1793,1647,2231,1817,19996,15898,1378,1116,1682,1488,1486,1531,1222,1444,994,1321,1474,2270,11885,19626,1089,1919,1239,2322,1659,3457,474,1070,1111,2716,1137,3140,3457,10485,578,1567,808,1985,1268,2866,1483,2949,1725,3037,1290,2054,739,1104,1756,2484,1353,2031,1562,2596,739,1335,654,1253,977,2013,915,2071,837,2087,1609,4265,1112,2457,0,0,-56,152,12,82,985,2098,414,1121,0,0,209,580,227,1231,227,839,305,718,231,333,413,335,708,281,638,129,367,-13,261,-76,297,-179,230,-230,168,-262,103,-241,342,-1380,205,-400,241,-330,3673,-3561,24,-99,3104,-2933,2884,-2581,801,-632,1068,-736,1399,-880,1468,-799,1063,-506,1416,-575,1752,-581,1683,-448,1260,-245,1626,-202,1413,-96,1359,-37,3198,10,2577,-154,1953,-254,2004,-387,1819,-466,1109,-345,1290,-445,1528,-612,1696,-773,1377,-700,4214,-2584,2477,-1409,1727,-872,1841,-853,2179,-961,1578,-574,3492,-1074,1798,-497,2932,-616,10845,-1829,6770,-1133,3544,-464,3050,-222,2092,-44,10221,280,3438,17,3036,-144,3052,-324,2378,-381,2250,-471,21098,-5018,0,0,63,63,1616,-356,414,-51,440,56,424,199,288,254,249,372,831,2117,323,609,0,0,793,1211,922,1043,0,0,76,30,301,384,173,413,77,487,-17,298,-71,335,-243,568,-220,350,-349,403,-243,184,-191,51,-215,-32,-156,-111,-103,-137,-78,-257,20,-246,74,-170,162,-173,132,-66,293,-40,212,45,292,163,590,447,160,42,1108,714,654,540,1117,720,1486,864,2277,1090,767,166,497,206,1846,622,2060,474,1994,259,13627,2408,2491,398,3058,644,963,144,0,0,100,-44,368,-1339,451,-2187,248,-2089,13,-951,-76,-591,0,0,316,190,1799,1537,0,0,1012,-617,1981,-1041,5451,-3066,375,-311,864,-1256,0,0,616,558,311,199,1844,976,2267,1333,1696,936,2715,1626,4400,3591,0,0,1534,6635,0,0,20,86,1326,-1541,260,-217,508,-260,4888,-1507,414,-107,422,-29,272,29,434,132,104,-17,3366,1475,1000,395,2846,891,1253,346,1409,476,0,0,52,11,1443,-4232,113,-223,263,-356,590,-494,245,-124,519,-155,384,-11,330,55,980,347,2677,1192],\"steps\":[{\"instruction\":\"向东北行驶187米,偏左转\",\"polyline_idx\":[0,3],\"road_name\":\"\",\"dir_desc\":\"东北\",\"distance\":187,\"act_desc\":\"偏左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"行驶38米,\",\"polyline_idx\":[4,9],\"road_name\":\"\",\"dir_desc\":\"\",\"distance\":38,\"act_desc\":\"\",\"accessorial_desc\":\"\"},{\"instruction\":\"行驶358米,右转\",\"polyline_idx\":[10,21],\"road_name\":\"\",\"dir_desc\":\"\",\"distance\":358,\"act_desc\":\"右转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿花园兜路向东北行驶108米,左转\",\"polyline_idx\":[22,25],\"road_name\":\"花园兜路\",\"dir_desc\":\"东北\",\"distance\":108,\"act_desc\":\"左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿东宁路向西北行驶435米,右转不要进入内部路\",\"polyline_idx\":[26,37],\"road_name\":\"东宁路\",\"dir_desc\":\"西北\",\"distance\":435,\"act_desc\":\"右转\",\"accessorial_desc\":\"不要进入内部路\"},{\"instruction\":\"沿环站北路向东北行驶646米,左转\",\"polyline_idx\":[38,55],\"road_name\":\"环站北路\",\"dir_desc\":\"东北\",\"distance\":646,\"act_desc\":\"左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿环站东路行驶422米,右转\",\"polyline_idx\":[56,69],\"road_name\":\"环站东路\",\"dir_desc\":\"\",\"distance\":422,\"act_desc\":\"右转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿德胜东路向东行驶145米,直行上坡\",\"polyline_idx\":[70,75],\"road_name\":\"德胜东路\",\"dir_desc\":\"东\",\"distance\":145,\"act_desc\":\"直行\",\"accessorial_desc\":\"上坡\"},{\"instruction\":\"沿德胜快速路向东行驶1.3公里,偏右转进入匝道\",\"polyline_idx\":[76,91],\"road_name\":\"德胜快速路\",\"dir_desc\":\"东\",\"distance\":1259,\"act_desc\":\"偏右转\",\"accessorial_desc\":\"进入匝道\"},{\"instruction\":\"沿德胜互通行驶582米,偏左转不要下坡\",\"polyline_idx\":[92,101],\"road_name\":\"德胜互通\",\"dir_desc\":\"\",\"distance\":582,\"act_desc\":\"偏左转\",\"accessorial_desc\":\"不要下坡\"},{\"instruction\":\"沿空港高架路向东北行驶2.0公里,直行\",\"polyline_idx\":[102,143],\"road_name\":\"空港高架路\",\"dir_desc\":\"东北\",\"distance\":2008,\"act_desc\":\"直行\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿空港高架路向东北行驶1.7公里,直行\",\"polyline_idx\":[144,165],\"road_name\":\"空港高架路\",\"dir_desc\":\"东北\",\"distance\":1691,\"act_desc\":\"直行\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿S2沪杭高速向东北行驶2.0公里,直行\",\"polyline_idx\":[166,173],\"road_name\":\"沪杭高速\",\"dir_desc\":\"东北\",\"distance\":1981,\"act_desc\":\"直行\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿S2沪杭高速行驶814米,偏左转\",\"polyline_idx\":[174,187],\"road_name\":\"沪杭高速\",\"dir_desc\":\"\",\"distance\":814,\"act_desc\":\"偏左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿S2沪杭高速行驶28.9公里,偏右转进入匝道\",\"polyline_idx\":[188,343],\"road_name\":\"沪杭高速\",\"dir_desc\":\"\",\"distance\":28866,\"act_desc\":\"偏右转\",\"accessorial_desc\":\"进入匝道\"},{\"instruction\":\"沿骑塘枢纽行驶370米,偏左转\",\"polyline_idx\":[344,353],\"road_name\":\"骑塘枢纽\",\"dir_desc\":\"\",\"distance\":370,\"act_desc\":\"偏左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿G9903杭州都市圈环线行驶17.1公里,偏右转驶出高速\",\"polyline_idx\":[354,483],\"road_name\":\"杭州都市圈环线\",\"dir_desc\":\"\",\"distance\":17124,\"act_desc\":\"偏右转\",\"accessorial_desc\":\"驶出高速\"},{\"instruction\":\"沿苏台高速出口行驶716米,\",\"polyline_idx\":[484,503],\"road_name\":\"苏台高速出口\",\"dir_desc\":\"\",\"distance\":716,\"act_desc\":\"\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿苏台高速出口向东北行驶288米,偏左转\",\"polyline_idx\":[504,509],\"road_name\":\"苏台高速出口\",\"dir_desc\":\"东北\",\"distance\":288,\"act_desc\":\"偏左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿三环西路行驶4.7公里,左转\",\"polyline_idx\":[510,587],\"road_name\":\"三环西路\",\"dir_desc\":\"\",\"distance\":4685,\"act_desc\":\"左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿湖盐公路向西行驶712米,右转\",\"polyline_idx\":[588,601],\"road_name\":\"湖盐公路\",\"dir_desc\":\"西\",\"distance\":712,\"act_desc\":\"右转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿南陈线行驶287米,左转\",\"polyline_idx\":[602,607],\"road_name\":\"南陈线\",\"dir_desc\":\"\",\"distance\":287,\"act_desc\":\"左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"行驶1.2公里,右转\",\"polyline_idx\":[608,619],\"road_name\":\"\",\"dir_desc\":\"\",\"distance\":1245,\"act_desc\":\"右转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿镇南路向东北行驶1.8公里,偏右转\",\"polyline_idx\":[620,635],\"road_name\":\"镇南路\",\"dir_desc\":\"东北\",\"distance\":1777,\"act_desc\":\"偏右转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿镇南路向东行驶657米,左转\",\"polyline_idx\":[636,639],\"road_name\":\"镇南路\",\"dir_desc\":\"东\",\"distance\":657,\"act_desc\":\"左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿新华南路行驶2.2公里,左转\",\"polyline_idx\":[640,671],\"road_name\":\"新华南路\",\"dir_desc\":\"\",\"distance\":2209,\"act_desc\":\"左转\",\"accessorial_desc\":\"\"},{\"instruction\":\"沿虹桥路行驶1.2公里,\",\"polyline_idx\":[672,695],\"road_name\":\"虹桥路\",\"dir_desc\":\"\",\"distance\":1192,\"act_desc\":\"\",\"accessorial_desc\":\"\"}],\"tags\":[\"大众常走\"],\"taxi_fare\":{\"fare\":257},\"speed\":[{\"speed\":37,\"polyline_idx\":[0,3],\"distance\":187,\"level\":0},{\"speed\":46,\"polyline_idx\":[2,9],\"distance\":38,\"level\":0},{\"speed\":43,\"polyline_idx\":[8,21],\"distance\":358,\"level\":0},{\"speed\":23,\"polyline_idx\":[20,25],\"distance\":108,\"level\":0},{\"speed\":34,\"polyline_idx\":[24,37],\"distance\":434,\"level\":0},{\"speed\":36,\"polyline_idx\":[36,45],\"distance\":258,\"level\":0},{\"speed\":12,\"polyline_idx\":[44,47],\"distance\":65,\"level\":0},{\"speed\":36,\"polyline_idx\":[46,55],\"distance\":322,\"level\":0},{\"speed\":43,\"polyline_idx\":[54,69],\"distance\":432,\"level\":0},{\"speed\":40,\"polyline_idx\":[68,75],\"distance\":144,\"level\":0},{\"speed\":40,\"polyline_idx\":[74,91],\"distance\":1259,\"level\":0},{\"speed\":54,\"polyline_idx\":[90,101],\"distance\":582,\"level\":0},{\"speed\":56,\"polyline_idx\":[100,143],\"distance\":2008,\"level\":0},{\"speed\":59,\"polyline_idx\":[142,165],\"distance\":1690,\"level\":0},{\"speed\":61,\"polyline_idx\":[164,173],\"distance\":1981,\"level\":0},{\"speed\":65,\"polyline_idx\":[172,187],\"distance\":814,\"level\":0},{\"speed\":72,\"polyline_idx\":[186,343],\"distance\":28863,\"level\":0},{\"speed\":78,\"polyline_idx\":[342,353],\"distance\":370,\"level\":0},{\"speed\":75,\"polyline_idx\":[352,483],\"distance\":17123,\"level\":0},{\"speed\":52,\"polyline_idx\":[482,503],\"distance\":716,\"level\":0},{\"speed\":32,\"polyline_idx\":[502,509],\"distance\":288,\"level\":0},{\"speed\":55,\"polyline_idx\":[508,587],\"distance\":4685,\"level\":0},{\"speed\":49,\"polyline_idx\":[586,601],\"distance\":711,\"level\":0},{\"speed\":54,\"polyline_idx\":[600,607],\"distance\":287,\"level\":0},{\"speed\":47,\"polyline_idx\":[606,619],\"distance\":1245,\"level\":0},{\"speed\":53,\"polyline_idx\":[618,635],\"distance\":1774,\"level\":0},{\"speed\":45,\"polyline_idx\":[634,639],\"distance\":657,\"level\":0},{\"speed\":49,\"polyline_idx\":[638,671],\"distance\":2207,\"level\":0},{\"speed\":44,\"polyline_idx\":[670,695],\"distance\":1189,\"level\":0}],\"route_id\":\"3240573766161247677\"}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    }
+  ],
+  "server": {
+    "meta": null,
+    "protocol_version": "2025-11-25",
+    "capabilities": {
+      "experimental": null,
+      "logging": null,
+      "prompts": {
+        "list_changed": false
+      },
+      "resources": null,
+      "tools": {
+        "list_changed": false
+      },
+      "completions": null,
+      "extensions": null,
+      "tasks": {
+        "list": null,
+        "cancel": null,
+        "requests": null
+      }
+    },
+    "server_info": {
+      "name": "TencentMapMCPWebService",
+      "title": "Tencent Map LBS MCP Service",
+      "version": "1.2.0",
+      "description": "Welcome to Tencent Map LBS MCP Service!",
+      "website_url": "https://lbs.qq.com",
+      "icons": [
+        {
+          "src": "https://mapapi.qq.com/web/lbs/logo/favicon.ico",
+          "mime_type": "image/vnd.microsoft.icon",
+          "sizes": [
+            "100*72"
+          ],
+          "theme": null
+        }
+      ]
+    },
+    "instructions": null
+  },
+  "finished_at": "2026-09-12T01:17:22.206428+00:00"
+}

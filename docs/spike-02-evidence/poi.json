@@ -1,0 +1,575 @@
+{
+  "started_at": "2026-09-11T16:02:55.041753+00:00",
+  "transport": "SSE",
+  "format": 1,
+  "events": [
+    {
+      "tool": "placeSuggestion",
+      "arguments": {
+        "keyword": "杭州东站",
+        "region": "杭州"
+      },
+      "sent_at": "2026-09-11T16:02:55.813229+00:00",
+      "elapsed_ms": 275,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"query ok\",\"request_id\":\"8304589000283650508\",\"count\":100,\"data\":[{\"id\":\"10905255156366826898\",\"title\":\"杭州东站\",\"address\":\"浙江省杭州市上城区天城路1号\",\"category\":\"基础设施:交通设施:火车站\",\"type\":0,\"location\":{\"lat\":30.291331,\"lng\":120.212998},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"},{\"id\":\"7855176449171188180\",\"title\":\"杭州东站-北进站口\",\"address\":\"浙江省杭州市上城区彭埠街道天城路1号杭州东站2层\",\"category\":\"基础设施:火车站附属:进站口\",\"type\":0,\"location\":{\"lat\":30.291876,\"lng\":120.21274},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"},{\"id\":\"6730613154923883928\",\"title\":\"杭州东站-东进站口\",\"address\":\"浙江省杭州市上城区杭州东站东广场2层东面\",\"category\":\"基础设施:火车站附属:进站口\",\"type\":0,\"location\":{\"lat\":30.292281,\"lng\":120.214624},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"},{\"id\":\"18261772237936715795\",\"title\":\"杭州东站-南进站口\",\"address\":\"浙江省杭州市上城区天城路\",\"category\":\"基础设施:火车站附属:进站口\",\"type\":0,\"location\":{\"lat\":30.290937,\"lng\":120.213803},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"},{\"id\":\"2199027904090\",\"title\":\"火车东站[地铁站]\",\"address\":\"地铁1号线,地铁4号线\",\"category\":\"基础设施:交通设施:地铁站\",\"type\":2,\"location\":{\"lat\":30.291074,\"lng\":120.212824},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"},{\"id\":\"4037852182082420431\",\"title\":\"杭州东站-北出站口\",\"address\":\"浙江省杭州市上城区天城路1号杭州东站负1层\",\"category\":\"基础设施:火车站附属:出站口\",\"type\":0,\"location\":{\"lat\":30.29128,\"lng\":120.21264},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"},{\"id\":\"12905670419995386327\",\"title\":\"杭州站\",\"address\":\"浙江省杭州市上城区环城东路1号\",\"category\":\"基础设施:交通设施:火车站\",\"type\":0,\"location\":{\"lat\":30.243749,\"lng\":120.182488},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"},{\"id\":\"2925857261148568615\",\"title\":\"杭州东站-2层西进站口\",\"address\":\"浙江省杭州市上城区新塘路\",\"category\":\"基础设施:火车站附属:进站口\",\"type\":0,\"location\":{\"lat\":30.290144,\"lng\":120.211468},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"},{\"id\":\"4142172479629420559\",\"title\":\"杭州东站停车场\",\"address\":\"浙江省杭州市上城区全福桥路2号杭州东站B1\",\"category\":\"汽车:停车场\",\"type\":0,\"location\":{\"lat\":30.294388,\"lng\":120.214385},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"},{\"id\":\"1777111028658876038\",\"title\":\"杭州东站万象汇\",\"address\":\"浙江省杭州市上城区和兴路129号\",\"category\":\"购物:综合商场:购物中心\",\"type\":0,\"location\":{\"lat\":30.294097,\"lng\":120.217695},\"adcode\":330102,\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"上城区\"}]}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "placeSuggestion",
+      "arguments": {
+        "keyword": "南浔古镇",
+        "region": "湖州"
+      },
+      "sent_at": "2026-09-11T16:02:56.688467+00:00",
+      "elapsed_ms": 259,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"query ok\",\"request_id\":\"13543382952439444961\",\"count\":100,\"data\":[{\"id\":\"4730370425597312423\",\"title\":\"南浔古镇景区\",\"address\":\"浙江省湖州市南浔区人瑞路51号\",\"category\":\"旅游景点:国家级景点\",\"type\":0,\"location\":{\"lat\":30.876251,\"lng\":120.43105},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"},{\"id\":\"14314045419430760427\",\"title\":\"南浔古镇景区-南1门\",\"address\":\"浙江省湖州市南浔区人瑞路51号南浔古镇景区内\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.869721,\"lng\":120.430782},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"},{\"id\":\"580309009531217883\",\"title\":\"南浔古镇景区游客接待中心\",\"address\":\"浙江省湖州市南浔区南浔镇老紫阳馆特产商行对面\",\"category\":\"旅游景点:景点公园附属\",\"type\":0,\"location\":{\"lat\":30.869889,\"lng\":120.43087},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"},{\"id\":\"3394960603254197416\",\"title\":\"南浔古镇1号停车场-入口\",\"address\":\"浙江省湖州市南浔区1号地面停车场\",\"category\":\"室内及附属设施:通行设施类:停车场入口\",\"type\":0,\"location\":{\"lat\":30.869188,\"lng\":120.430771},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"},{\"id\":\"14017767498631369029\",\"title\":\"南浔古镇景区南门地上停车场\",\"address\":\"浙江省湖州市南浔区人瑞路景区\",\"category\":\"汽车:停车场\",\"type\":0,\"location\":{\"lat\":30.869167,\"lng\":120.430414},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"},{\"id\":\"11543473657811130014\",\"title\":\"南浔古镇-北门\",\"address\":\"浙江省湖州市南浔区南浔镇东塘路南浔古镇\",\"category\":\"室内及附属设施:通行设施类:外部门\",\"type\":0,\"location\":{\"lat\":30.883436,\"lng\":120.428484},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"},{\"id\":\"17960839530929332819\",\"title\":\"南浔古镇3号地上停车场\",\"address\":\"浙江省湖州市南浔区南浔古镇内(东侧)\",\"category\":\"汽车:停车场\",\"type\":0,\"location\":{\"lat\":30.880652,\"lng\":120.441234},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"},{\"id\":\"426998211696229959\",\"title\":\"南浔古镇东门售票处\",\"address\":\"浙江省湖州市南浔区南浔镇东塘路南浔古镇景区\",\"category\":\"生活服务:票务代售:其它票务代售\",\"type\":0,\"location\":{\"lat\":30.880976,\"lng\":120.43987},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"},{\"id\":\"6393796246138997056\",\"title\":\"南浔古镇景区-东2门\",\"address\":\"浙江省湖州市南浔区南浔镇人瑞路51号南浔古镇景区内\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.870693,\"lng\":120.432037},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"},{\"id\":\"867723496149868717\",\"title\":\"南浔古镇景区-北门\",\"address\":\"浙江省湖州市南浔区人瑞路51号南浔古镇景区\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.870994,\"lng\":120.430096},\"adcode\":330503,\"province\":\"浙江省\",\"city\":\"湖州市\",\"district\":\"南浔区\"}]}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "placeSuggestion",
+      "arguments": {
+        "keyword": "乌镇西栅",
+        "region": "嘉兴"
+      },
+      "sent_at": "2026-09-11T16:02:57.548376+00:00",
+      "elapsed_ms": 205,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"query ok\",\"request_id\":\"17180838209954475188\",\"count\":100,\"data\":[{\"id\":\"712583084622019834\",\"title\":\"乌镇西栅景区\",\"address\":\"浙江省嘉兴市桐乡市石佛南路18号\",\"category\":\"旅游景点:国家级景点\",\"type\":0,\"location\":{\"lat\":30.749961,\"lng\":120.484191},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"},{\"id\":\"9013361776090583676\",\"title\":\"乌镇西栅景区-1号入口\",\"address\":\"浙江省嘉兴市桐乡市乌镇镇石佛南路18号乌镇西栅景区\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.747963,\"lng\":120.489517},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"},{\"id\":\"16944902949586480736\",\"title\":\"乌镇西栅历史街区住宿游客接待\",\"address\":\"浙江省嘉兴市桐乡市乌镇石佛南路18号\",\"category\":\"旅游景点:景点公园附属\",\"type\":0,\"location\":{\"lat\":30.748032,\"lng\":120.489193},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"},{\"id\":\"2532242490037806560\",\"title\":\"乌镇西栅景区小客车地上停车场\",\"address\":\"浙江省嘉兴市桐乡市\",\"category\":\"汽车:停车场\",\"type\":0,\"location\":{\"lat\":30.747633,\"lng\":120.490232},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"},{\"id\":\"6839289436876580280\",\"title\":\"乌镇西栅景区-出口\",\"address\":\"浙江省嘉兴市桐乡市乌镇镇石佛南路18号乌镇西栅景区乌镇西栅景区-乌镇西栅历史街区\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.747846,\"lng\":120.489362},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"},{\"id\":\"7526371668546370181\",\"title\":\"乌镇西栅景区-东门售票处\",\"address\":\"浙江省嘉兴市桐乡市乌镇西栅大街129号西栅景区内乌镇西栅1号游客服务中心F1\",\"category\":\"生活服务:票务代售:景点售票\",\"type\":0,\"location\":{\"lat\":30.747831,\"lng\":120.489189},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"},{\"id\":\"11448383778206431613\",\"title\":\"乌镇西栅景区-2号入口\",\"address\":\"浙江省嘉兴市桐乡市石佛南路18号乌镇西栅景区(东北角)\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.751596,\"lng\":120.48725},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"},{\"id\":\"4128635726579307251\",\"title\":\"乌镇西栅景区-南门\",\"address\":\"浙江省嘉兴市桐乡市石佛南路18号乌镇西栅景区\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.748115,\"lng\":120.481209},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"},{\"id\":\"13667940165621800358\",\"title\":\"乌镇西栅景区1号停车场-入口\",\"address\":\"浙江省嘉兴市桐乡市慈云路与石佛南路交叉口东北方向90米左右\",\"category\":\"室内及附属设施:通行设施类:停车场入口\",\"type\":0,\"location\":{\"lat\":30.745906,\"lng\":120.48884},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"},{\"id\":\"15242260177657285199\",\"title\":\"乌镇西栅景区-东门\",\"address\":\"浙江省嘉兴市桐乡市乌镇镇隆源路477号乌镇西栅景区内(东侧)\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.74805,\"lng\":120.49184},\"adcode\":330483,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"桐乡市\"}]}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "placeSuggestion",
+      "arguments": {
+        "keyword": "西塘古镇",
+        "region": "嘉兴"
+      },
+      "sent_at": "2026-09-11T16:02:58.354156+00:00",
+      "elapsed_ms": 258,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"query ok\",\"request_id\":\"4853927021574247872\",\"count\":100,\"data\":[{\"id\":\"17479202779084655946\",\"title\":\"西塘古镇景区\",\"address\":\"浙江省嘉兴市嘉善县南苑路258号\",\"category\":\"旅游景点:国家级景点\",\"type\":0,\"location\":{\"lat\":30.94402,\"lng\":120.89319},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"},{\"id\":\"9131389257128750161\",\"title\":\"西塘古镇[公交站]\",\"address\":\"西塘古镇直达高铁专线\",\"category\":\"基础设施:交通设施:公交车站\",\"type\":1,\"location\":{\"lat\":30.938707,\"lng\":120.888109},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"},{\"id\":\"12764299768457926772\",\"title\":\"西塘古镇景区-主入口\",\"address\":\"浙江省嘉兴市嘉善县西塘镇南苑路258号\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.940096,\"lng\":120.888383},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"},{\"id\":\"707419970147982949\",\"title\":\"西塘古镇景区第一地上停车场\",\"address\":\"浙江省嘉兴市嘉善县南苑路258号西塘古镇景区内\",\"category\":\"汽车:停车场\",\"type\":0,\"location\":{\"lat\":30.93898,\"lng\":120.888689},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"},{\"id\":\"1296221693641490255\",\"title\":\"西塘古镇景区售票大厅\",\"address\":\"浙江省嘉兴市嘉善县西塘镇南苑路258号西塘古镇景区内\",\"category\":\"生活服务:票务代售:景点售票\",\"type\":0,\"location\":{\"lat\":30.939929,\"lng\":120.888156},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"},{\"id\":\"1897624582928406542\",\"title\":\"西塘古镇景区-北入口\",\"address\":\"浙江省嘉兴市嘉善县南苑路258号西塘古镇景区\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.947639,\"lng\":120.890302},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"},{\"id\":\"14706063008090581344\",\"title\":\"西塘古镇景区第三地上停车场\",\"address\":\"浙江省嘉兴市嘉善县万福路与祥符路交叉口东北方向130米左右\",\"category\":\"汽车:停车场\",\"type\":0,\"location\":{\"lat\":30.947421,\"lng\":120.900705},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"},{\"id\":\"540956508854782464\",\"title\":\"西塘古镇景区第二地上停车场\",\"address\":\"浙江省嘉兴市嘉善县\",\"category\":\"汽车:停车场\",\"type\":0,\"location\":{\"lat\":30.943595,\"lng\":120.892366},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"},{\"id\":\"3513180464635706082\",\"title\":\"西塘古镇景区-出口\",\"address\":\"浙江省嘉兴市嘉善县西塘镇烧香港南街\",\"category\":\"室内及附属设施:通行设施类:门/出入口\",\"type\":0,\"location\":{\"lat\":30.945033,\"lng\":120.898259},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"},{\"id\":\"12933309364592531531\",\"title\":\"西塘古镇景区-游客中心\",\"address\":\"浙江省嘉兴市嘉善县南苑路\",\"category\":\"旅游景点:景点公园附属\",\"type\":0,\"location\":{\"lat\":30.939988,\"lng\":120.887948},\"adcode\":330421,\"province\":\"浙江省\",\"city\":\"嘉兴市\",\"district\":\"嘉善县\"}]}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "tool": "placeSuggestion",
+      "arguments": {
+        "keyword": "上海虹桥站",
+        "region": "上海"
+      },
+      "sent_at": "2026-09-11T16:02:59.213784+00:00",
+      "elapsed_ms": 178,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"query ok\",\"request_id\":\"5287977875169628893\",\"count\":100,\"data\":[{\"id\":\"1704734371330583758\",\"title\":\"上海虹桥站\",\"address\":\"上海市闵行区新虹街道申贵路1500号\",\"category\":\"基础设施:交通设施:火车站\",\"type\":0,\"location\":{\"lat\":31.194106,\"lng\":121.320666},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"},{\"id\":\"10804152397807325031\",\"title\":\"虹桥火车站[地铁站]\",\"address\":\"地铁10号线,地铁2号线,地铁17号线\",\"category\":\"基础设施:交通设施:地铁站\",\"type\":2,\"location\":{\"lat\":31.19401,\"lng\":121.319149},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"},{\"id\":\"3487429679922308127\",\"title\":\"上海虹桥站(南进站口)\",\"address\":\"上海市闵行区申昆路1500号\",\"category\":\"基础设施:火车站附属:进站口\",\"type\":0,\"location\":{\"lat\":31.193649,\"lng\":121.320795},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"},{\"id\":\"15599669939473791092\",\"title\":\"上海虹桥站(北进站口)\",\"address\":\"上海市闵行区申贵路1500号\",\"category\":\"基础设施:火车站附属:进站口\",\"type\":0,\"location\":{\"lat\":31.19474,\"lng\":121.3206},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"},{\"id\":\"3804556427625352643\",\"title\":\"上海虹桥站--西出站口\",\"address\":\"上海市闵行区申贵路1500号上海虹桥站F2\",\"category\":\"基础设施:火车站附属:出站口\",\"type\":0,\"location\":{\"lat\":31.193926,\"lng\":121.318639},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"},{\"id\":\"12389045528654122952\",\"title\":\"上海虹桥国际机场T2航站楼\",\"address\":\"上海市闵行区虹桥路2550号虹桥国际机场T2航站楼F2\",\"category\":\"基础设施:交通设施:飞机场\",\"type\":0,\"location\":{\"lat\":31.1943,\"lng\":121.327898},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"},{\"id\":\"1891194010217592382\",\"title\":\"上海虹桥站-西进站口\",\"address\":\"上海市闵行区申贵路1500号上海虹桥站B1\",\"category\":\"基础设施:火车站附属:进站口\",\"type\":0,\"location\":{\"lat\":31.193961,\"lng\":121.318708},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"},{\"id\":\"3904244493131493006\",\"title\":\"上海虹桥站-南2出发\",\"address\":\"上海市闵行区申贵路1500号上海虹桥站B1\",\"category\":\"基础设施:火车站附属:进站口\",\"type\":0,\"location\":{\"lat\":31.193381,\"lng\":121.322356},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"},{\"id\":\"18365092536756173178\",\"title\":\"上海虹桥站-东出站口\",\"address\":\"上海市闵行区虹桥火车站地铁站北2入口步行450米\",\"category\":\"基础设施:火车站附属:出站口\",\"type\":0,\"location\":{\"lat\":31.194099,\"lng\":121.322431},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"},{\"id\":\"6567199726484463429\",\"title\":\"虹桥火车站P9地下停车场\",\"address\":\"上海市闵行区申虹路(虹桥机场2号航站楼旁)\",\"category\":\"汽车:停车场\",\"type\":0,\"location\":{\"lat\":31.196668,\"lng\":121.317345},\"adcode\":310112,\"province\":\"上海市\",\"city\":\"上海市\",\"district\":\"闵行区\"}]}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    }
+  ],
+  "server": {
+    "meta": null,
+    "protocol_version": "2025-11-25",
+    "capabilities": {
+      "experimental": null,
+      "logging": null,
+      "prompts": {
+        "list_changed": false
+      },
+      "resources": null,
+      "tools": {
+        "list_changed": false
+      },
+      "completions": null,
+      "extensions": null,
+      "tasks": {
+        "list": null,
+        "cancel": null,
+        "requests": null
+      }
+    },
+    "server_info": {
+      "name": "TencentMapMCPWebService",
+      "title": "Tencent Map LBS MCP Service",
+      "version": "1.2.0",
+      "description": "Welcome to Tencent Map LBS MCP Service!",
+      "website_url": "https://lbs.qq.com",
+      "icons": [
+        {
+          "src": "https://mapapi.qq.com/web/lbs/logo/favicon.ico",
+          "mime_type": "image/vnd.microsoft.icon",
+          "sizes": [
+            "100*72"
+          ],
+          "theme": null
+        }
+      ]
+    },
+    "instructions": null
+  },
+  "tools": {
+    "meta": null,
+    "ttl_ms": 0,
+    "cache_scope": "private",
+    "next_cursor": null,
+    "tools": [
+      {
+        "name": "geocoder",
+        "title": null,
+        "description": "提供由文字地址(包含省市区信息的完整地址)到经纬度的转换能力，并同时提供结构化的省市区地址信息",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "address": {
+              "description": "包含省市区信息的的格式化地址 或 包含城市名的地点关键词",
+              "type": "string"
+            }
+          },
+          "required": [
+            "address"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "placeSuggestion",
+        "title": null,
+        "description": "根据要搜索地点的关键词和搜索的城市（城市名），搜索符合条件的地点信息， 返回包括地点名称、地址、经纬度、分类等（如搜索北京的景点、酒店、购物场景，搜索某个地方的详细地址等）",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "keyword": {
+              "description": "关键词,地点名称",
+              "type": "string"
+            },
+            "region": {
+              "description": "搜索城市，如果不知道城市名，可不输入本参数",
+              "type": "string"
+            }
+          },
+          "required": [
+            "keyword"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "placeSearchNearby",
+        "title": null,
+        "description": "附近周边搜索，输入的搜索关键词，中心点经纬度（格式lat,lng）搜索其周边符合条件的地点信息 返回包括地点名称、地址、经纬度、分类等（如搜索北京的景点、酒店、购物场景，搜索某个地方的详细地址等）",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "keyword": {
+              "description": "关键词,地点名称",
+              "type": "string"
+            },
+            "location": {
+              "description": "搜索中心点经纬度（可以通过地址解析将文字地址转为经纬度），格式lat,lng",
+              "type": "string"
+            }
+          },
+          "required": [
+            "location",
+            "keyword"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "directionDriving",
+        "title": null,
+        "description": "根据起终点经纬度，规划驾车路线，支持参考路况、少收费、不走高速等偏好，同时支持返回路线预估用时，路线距离，过路费等信息",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "description": "起点经纬度,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            },
+            "to": {
+              "description": "终点（目的地）经纬度,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            }
+          },
+          "required": [
+            "from",
+            "to"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "placeAlongby",
+        "title": null,
+        "description": "在路线的沿途进行搜索：输入驾车路线规划接口返回的路线ID（route_id）和搜索关键词，搜索该路线沿途符合该关键词的地点",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "keyword": {
+              "description": "搜索关键词，例如：充电站、厕所、停车场、购物、加油站、银行ATM、加气站、便利店、服务区、汽车维修、中石油、中石化",
+              "type": "string"
+            },
+            "route_id": {
+              "description": "驾车路线规划接口返回的路线ID（route_id），沿途搜索将按“驾车路线规划”得到的路线进行沿途搜索",
+              "type": "string"
+            }
+          },
+          "required": [
+            "route_id",
+            "keyword"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "placeDetail",
+        "title": null,
+        "description": "POI详情信息,根据POI ID搜索相关信息,包括：名称、地址、经纬度、分类、省市区信息。如果查询结果为空，则返回POI ID不存在",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "poiid",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "matrix",
+        "title": null,
+        "description": "用于批量计算多个起终点到多个终点的路面距离（或称导航距离）",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            },
+            "mode": {
+              "description": "通行方式，驾车为driving， 步行为walking， 骑行为bicycling。 不支持其他通行方式",
+              "type": "string"
+            },
+            "to": {
+              "description": "终点（目的地）经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            }
+          },
+          "required": [
+            "from",
+            "to",
+            "mode"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "reverseGeocoder",
+        "title": null,
+        "description": "输入经纬度坐标，返回其所在位置的语义化地址、省、市、区、乡镇、门牌号、行政区划代码、商圈、地标、道路及交叉口、河流、湖泊、桥等",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "location": {
+              "description": "经纬度坐标，结构是lat,lng",
+              "type": "string"
+            }
+          },
+          "required": [
+            "location"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "ipLocation",
+        "title": null,
+        "description": "通过终端设备IP地址获取其当前所在省、市、区信息。如果用户不传，则置空",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "ip": {
+              "description": "IP地址(IPv4或IPv6）",
+              "type": "string"
+            }
+          }
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "weather",
+        "title": null,
+        "description": "通过行政区划代码，查询对应城市的实时天气或预报天气。",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "adcode": {
+              "description": "行政区划代码，与location经纬度坐标必有其一（可通过调用地址解析获取，输入地址或城市名，返回结果中的adcode即为行政区划代码）",
+              "type": "string"
+            },
+            "location": {
+              "description": "经纬度坐标，与adcode行政区划代码必有其一，结构是lat,lng",
+              "type": "string"
+            },
+            "type": {
+              "description": "可选now或者future。用户查询当前天气为now，查询未来天气为future。可为空，默认为now。",
+              "type": "string"
+            }
+          }
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "directionWalking",
+        "title": null,
+        "description": "根据起终点经纬度，规划步行路线，返回包括路线总距离、预估用时等",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            },
+            "to": {
+              "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            }
+          },
+          "required": [
+            "from",
+            "to"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "directionBicycling",
+        "title": null,
+        "description": "根据起终点经纬度，规划自行车骑行路线，返回包括路线总距离、预估用时等",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            },
+            "to": {
+              "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            }
+          },
+          "required": [
+            "from",
+            "to"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "directionTransit",
+        "title": null,
+        "description": "公共交通路线规划，根据起终点经纬度，规划公交/地铁线路乘坐方案， 支持指定出发时间（确保线路在首末车时段内），支持时间短、少换乘、少步行、地铁优先等多种偏好，为您规划多组乘坐方案， 同时返回路线总预估用时、总距离、总步行距离、票价，具体线路如何换乘（线路名、上车站、下车站名等）、首末车时间等",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            },
+            "policy": {
+              "description": "路线规划策略，包含以下3个规则： 1. 路线排序策略： LEAST_TIME：时间短（默认） LEAST_TRANSFER：少换乘 LEAST_WALKING：少步行 RECOMMEND：推荐策略，结合步行、换乘、耗时等多方面综合排序结果（与腾讯地图APP默认策略一致） 2. 额外限制条件： NO_SUBWAY：不坐地铁 ONLY_SUBWAY：只坐地铁 SUBWAY_FIRST：地铁优先 3. 排序策略与额外条件可同时使用，如：policy=LEAST_TRANSFER,NO_SUBWAY。如果含有额外限制条件则必须包含路线排序策略。",
+              "type": "string"
+            },
+            "to": {
+              "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            }
+          },
+          "required": [
+            "from",
+            "to"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "futureDrivingDirection",
+        "title": null,
+        "description": "根据起终点经纬度、未来出发时间，规划驾车驾车路线，路线会考虑未来时间的预测路况进行规划，支持返回预估用时、总距离等信息",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "departure_time": {
+              "description": "出发时间(时间戳格式)",
+              "type": "string"
+            },
+            "from": {
+              "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            },
+            "to": {
+              "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            }
+          },
+          "required": [
+            "from",
+            "to",
+            "departure_time"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      },
+      {
+        "name": "waypointOrder",
+        "title": null,
+        "description": "基于驾车路线规划，对输入的途经点以最顺路方式排序并规划路线，排序途经点最多16个。返回结果中的waypoints代表途经点的顺序",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            },
+            "need_waypoint_order": {
+              "description": "如果waypoints不是空，则传true",
+              "type": "string"
+            },
+            "to": {
+              "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+              "type": "string"
+            },
+            "waypoints": {
+              "description": "途经点经纬度，支持最多16个，结构是lat1,lng1;lat2,lng2;lat3,lng3....如果输入的是地址，则需要调用geocoder获取经纬度信息",
+              "type": "string"
+            }
+          },
+          "required": [
+            "from",
+            "to"
+          ]
+        },
+        "execution": null,
+        "output_schema": null,
+        "icons": null,
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "result_type": "complete"
+  },
+  "finished_at": "2026-09-11T16:02:59.995477+00:00"
+}

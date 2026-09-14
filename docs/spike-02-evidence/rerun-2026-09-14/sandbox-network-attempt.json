@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-09-14T08:32:31.178783+00:00",
+  "environment": {
+    "os": "macOS-15.7.9-x86_64-i386-64bit",
+    "python": "3.12.14",
+    "mcp": "2.2.0"
+  },
+  "endpoint": "https://mcp.map.qq.com/sse?key=<REDACTED>&format=1",
+  "authenticated": false,
+  "events": [],
+  "coordinate_source": "../points.json (historical POIs, not refreshed)",
+  "error": "ConnectError('[Errno 8] nodename nor servname provided, or not known')",
+  "finished_at": "2026-09-14T08:32:31.440235+00:00"
+}

@@ -1,0 +1,498 @@
+{
+  "started_at": "2026-09-14T08:50:00.782744+00:00",
+  "environment": {
+    "os": "macOS-15.7.9-x86_64-i386-64bit",
+    "python": "3.12.14",
+    "mcp": "2.2.0"
+  },
+  "endpoint": "https://mcp.map.qq.com/sse?key=<REDACTED>&format=1",
+  "credential_supplied": true,
+  "events": [
+    {
+      "case": "matrix-1x1-forward",
+      "tool": "matrix",
+      "arguments": {
+        "from": "30.291331,120.212998",
+        "to": "30.869188,120.430771",
+        "mode": "driving"
+      },
+      "sent_at": "2026-09-14T08:50:01.266688+00:00",
+      "elapsed_ms": 101.41,
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":0,\"message\":\"Success\",\"request_id\":\"1a716b80203b4b589b63ff1fa2f87be1\",\"result\":{\"rows\":[{\"elements\":[{\"distance\":84284,\"duration\":4682}]}]}}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": null,
+        "is_error": false,
+        "result_type": "complete"
+      }
+    }
+  ],
+  "coordinate_source": "../points.json (historical POIs, not refreshed)",
+  "initialize": {
+    "elapsed_ms": 83.96,
+    "response": {
+      "meta": null,
+      "protocol_version": "2025-11-25",
+      "capabilities": {
+        "experimental": null,
+        "logging": null,
+        "prompts": {
+          "list_changed": false
+        },
+        "resources": null,
+        "tools": {
+          "list_changed": false
+        },
+        "completions": null,
+        "extensions": null,
+        "tasks": {
+          "list": null,
+          "cancel": null,
+          "requests": null
+        }
+      },
+      "server_info": {
+        "name": "TencentMapMCPWebService",
+        "title": "Tencent Map LBS MCP Service",
+        "version": "1.2.0",
+        "description": "Welcome to Tencent Map LBS MCP Service!",
+        "website_url": "https://lbs.qq.com",
+        "icons": [
+          {
+            "src": "https://mapapi.qq.com/web/lbs/logo/favicon.ico",
+            "mime_type": "image/vnd.microsoft.icon",
+            "sizes": [
+              "100*72"
+            ],
+            "theme": null
+          }
+        ]
+      },
+      "instructions": null
+    }
+  },
+  "list_tools": {
+    "elapsed_ms": 202.27,
+    "response": {
+      "meta": null,
+      "ttl_ms": 0,
+      "cache_scope": "private",
+      "next_cursor": null,
+      "tools": [
+        {
+          "name": "geocoder",
+          "title": null,
+          "description": "提供由文字地址(包含省市区信息的完整地址)到经纬度的转换能力，并同时提供结构化的省市区地址信息",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "address": {
+                "description": "包含省市区信息的的格式化地址 或 包含城市名的地点关键词",
+                "type": "string"
+              }
+            },
+            "required": [
+              "address"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "placeSuggestion",
+          "title": null,
+          "description": "根据要搜索地点的关键词和搜索的城市（城市名），搜索符合条件的地点信息， 返回包括地点名称、地址、经纬度、分类等（如搜索北京的景点、酒店、购物场景，搜索某个地方的详细地址等）",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "keyword": {
+                "description": "关键词,地点名称",
+                "type": "string"
+              },
+              "region": {
+                "description": "搜索城市，如果不知道城市名，可不输入本参数",
+                "type": "string"
+              }
+            },
+            "required": [
+              "keyword"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "placeSearchNearby",
+          "title": null,
+          "description": "附近周边搜索，输入的搜索关键词，中心点经纬度（格式lat,lng）搜索其周边符合条件的地点信息 返回包括地点名称、地址、经纬度、分类等（如搜索北京的景点、酒店、购物场景，搜索某个地方的详细地址等）",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "keyword": {
+                "description": "关键词,地点名称",
+                "type": "string"
+              },
+              "location": {
+                "description": "搜索中心点经纬度（可以通过地址解析将文字地址转为经纬度），格式lat,lng",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location",
+              "keyword"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "directionDriving",
+          "title": null,
+          "description": "根据起终点经纬度，规划驾车路线，支持参考路况、少收费、不走高速等偏好，同时支持返回路线预估用时，路线距离，过路费等信息",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "from": {
+                "description": "起点经纬度,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              },
+              "to": {
+                "description": "终点（目的地）经纬度,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              }
+            },
+            "required": [
+              "from",
+              "to"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "placeAlongby",
+          "title": null,
+          "description": "在路线的沿途进行搜索：输入驾车路线规划接口返回的路线ID（route_id）和搜索关键词，搜索该路线沿途符合该关键词的地点",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "keyword": {
+                "description": "搜索关键词，例如：充电站、厕所、停车场、购物、加油站、银行ATM、加气站、便利店、服务区、汽车维修、中石油、中石化",
+                "type": "string"
+              },
+              "route_id": {
+                "description": "驾车路线规划接口返回的路线ID（route_id），沿途搜索将按“驾车路线规划”得到的路线进行沿途搜索",
+                "type": "string"
+              }
+            },
+            "required": [
+              "route_id",
+              "keyword"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "placeDetail",
+          "title": null,
+          "description": "POI详情信息,根据POI ID搜索相关信息,包括：名称、地址、经纬度、分类、省市区信息。如果查询结果为空，则返回POI ID不存在",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "poiid",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "matrix",
+          "title": null,
+          "description": "用于批量计算多个起终点到多个终点的路面距离（或称导航距离）",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "from": {
+                "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              },
+              "mode": {
+                "description": "通行方式，驾车为driving， 步行为walking， 骑行为bicycling。 不支持其他通行方式",
+                "type": "string"
+              },
+              "to": {
+                "description": "终点（目的地）经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              }
+            },
+            "required": [
+              "from",
+              "to",
+              "mode"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "reverseGeocoder",
+          "title": null,
+          "description": "输入经纬度坐标，返回其所在位置的语义化地址、省、市、区、乡镇、门牌号、行政区划代码、商圈、地标、道路及交叉口、河流、湖泊、桥等",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "location": {
+                "description": "经纬度坐标，结构是lat,lng",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "ipLocation",
+          "title": null,
+          "description": "通过终端设备IP地址获取其当前所在省、市、区信息。如果用户不传，则置空",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "ip": {
+                "description": "IP地址(IPv4或IPv6）",
+                "type": "string"
+              }
+            }
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "weather",
+          "title": null,
+          "description": "通过行政区划代码，查询对应城市的实时天气或预报天气。",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "adcode": {
+                "description": "行政区划代码，与location经纬度坐标必有其一（可通过调用地址解析获取，输入地址或城市名，返回结果中的adcode即为行政区划代码）",
+                "type": "string"
+              },
+              "location": {
+                "description": "经纬度坐标，与adcode行政区划代码必有其一，结构是lat,lng",
+                "type": "string"
+              },
+              "type": {
+                "description": "可选now或者future。用户查询当前天气为now，查询未来天气为future。可为空，默认为now。",
+                "type": "string"
+              }
+            }
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "directionWalking",
+          "title": null,
+          "description": "根据起终点经纬度，规划步行路线，返回包括路线总距离、预估用时等",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "from": {
+                "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              },
+              "to": {
+                "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              }
+            },
+            "required": [
+              "from",
+              "to"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "directionBicycling",
+          "title": null,
+          "description": "根据起终点经纬度，规划自行车骑行路线，返回包括路线总距离、预估用时等",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "from": {
+                "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              },
+              "to": {
+                "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              }
+            },
+            "required": [
+              "from",
+              "to"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "directionTransit",
+          "title": null,
+          "description": "公共交通路线规划，根据起终点经纬度，规划公交/地铁线路乘坐方案， 支持指定出发时间（确保线路在首末车时段内），支持时间短、少换乘、少步行、地铁优先等多种偏好，为您规划多组乘坐方案， 同时返回路线总预估用时、总距离、总步行距离、票价，具体线路如何换乘（线路名、上车站、下车站名等）、首末车时间等",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "from": {
+                "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              },
+              "policy": {
+                "description": "路线规划策略，包含以下3个规则： 1. 路线排序策略： LEAST_TIME：时间短（默认） LEAST_TRANSFER：少换乘 LEAST_WALKING：少步行 RECOMMEND：推荐策略，结合步行、换乘、耗时等多方面综合排序结果（与腾讯地图APP默认策略一致） 2. 额外限制条件： NO_SUBWAY：不坐地铁 ONLY_SUBWAY：只坐地铁 SUBWAY_FIRST：地铁优先 3. 排序策略与额外条件可同时使用，如：policy=LEAST_TRANSFER,NO_SUBWAY。如果含有额外限制条件则必须包含路线排序策略。",
+                "type": "string"
+              },
+              "to": {
+                "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              }
+            },
+            "required": [
+              "from",
+              "to"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "futureDrivingDirection",
+          "title": null,
+          "description": "根据起终点经纬度、未来出发时间，规划驾车驾车路线，路线会考虑未来时间的预测路况进行规划，支持返回预估用时、总距离等信息",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "departure_time": {
+                "description": "出发时间(时间戳格式)",
+                "type": "string"
+              },
+              "from": {
+                "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              },
+              "to": {
+                "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              }
+            },
+            "required": [
+              "from",
+              "to",
+              "departure_time"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        },
+        {
+          "name": "waypointOrder",
+          "title": null,
+          "description": "基于驾车路线规划，对输入的途经点以最顺路方式排序并规划路线，排序途经点最多16个。返回结果中的waypoints代表途经点的顺序",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "from": {
+                "description": "起点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              },
+              "need_waypoint_order": {
+                "description": "如果waypoints不是空，则传true",
+                "type": "string"
+              },
+              "to": {
+                "description": "终点（目的地）点经纬度信息,结构是lat,lng。 如果输入的是包含省市区信息的完整地址，可以调用地址解析获取经纬度， 如果是地点名称，可调用地点搜索获取经纬度（返回多条结果时可取第1条）",
+                "type": "string"
+              },
+              "waypoints": {
+                "description": "途经点经纬度，支持最多16个，结构是lat1,lng1;lat2,lng2;lat3,lng3....如果输入的是地址，则需要调用geocoder获取经纬度信息",
+                "type": "string"
+              }
+            },
+            "required": [
+              "from",
+              "to"
+            ]
+          },
+          "execution": null,
+          "output_schema": null,
+          "icons": null,
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "result_type": "complete"
+    }
+  },
+  "error": "ExceptionGroup('unhandled errors in a TaskGroup', [ExceptionGroup('unhandled errors in a TaskGroup', [AttributeError(\"'CallToolResult' object has no attribute 'isError'\")])])",
+  "finished_at": "2026-09-14T08:50:01.369814+00:00"
+}

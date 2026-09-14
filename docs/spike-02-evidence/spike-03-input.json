@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "provider": "Tencent Location MCP",
+  "tool": "matrix",
+  "mode": "driving",
+  "coordinate_system": "GCJ-02",
+  "captured_at": "2026-09-11T16:03:41.144532+00:00",
+  "source_file": "matrix.json",
+  "source_event_index": 0,
+  "request_id": "474fe03e6b544211a0f9d3033b1931fb",
+  "point_order": [
+    "hangzhou",
+    "nanxun",
+    "wuzhen",
+    "xitang",
+    "shanghai"
+  ],
+  "points": [
+    {
+      "id": "10905255156366826898",
+      "title": "杭州东站",
+      "address": "浙江省杭州市上城区天城路1号",
+      "category": "基础设施:交通设施:火车站",
+      "type": 0,
+      "location": {
+        "lat": 30.291331,
+        "lng": 120.212998
+      },
+      "adcode": 330102,
+      "province": "浙江省",
+      "city": "杭州市",
+      "district": "上城区"
+    },
+    {
+      "id": "3394960603254197416",
+      "title": "南浔古镇1号停车场-入口",
+      "address": "浙江省湖州市南浔区1号地面停车场",
+      "category": "室内及附属设施:通行设施类:停车场入口",
+      "type": 0,
+      "location": {
+        "lat": 30.869188,
+        "lng": 120.430771
+      },
+      "adcode": 330503,
+      "province": "浙江省",
+      "city": "湖州市",
+      "district": "南浔区"
+    },
+    {
+      "id": "13667940165621800358",
+      "title": "乌镇西栅景区1号停车场-入口",
+      "address": "浙江省嘉兴市桐乡市慈云路与石佛南路交叉口东北方向90米左右",
+      "category": "室内及附属设施:通行设施类:停车场入口",
+      "type": 0,
+      "location": {
+        "lat": 30.745906,
+        "lng": 120.48884
+      },
+      "adcode": 330483,
+      "province": "浙江省",
+      "city": "嘉兴市",
+      "district": "桐乡市"
+    },
+    {
+      "id": "707419970147982949",
+      "title": "西塘古镇景区第一地上停车场",
+      "address": "浙江省嘉兴市嘉善县南苑路258号西塘古镇景区内",
+      "category": "汽车:停车场",
+      "type": 0,
+      "location": {
+        "lat": 30.93898,
+        "lng": 120.888689
+      },
+      "adcode": 330421,
+      "province": "浙江省",
+      "city": "嘉兴市",
+      "district": "嘉善县"
+    },
+    {
+      "id": "1704734371330583758",
+      "title": "上海虹桥站",
+      "address": "上海市闵行区新虹街道申贵路1500号",
+      "category": "基础设施:交通设施:火车站",
+      "type": 0,
+      "location": {
+        "lat": 31.194106,
+        "lng": 121.320666
+      },
+      "adcode": 310112,
+      "province": "上海市",
+      "city": "上海市",
+      "district": "闵行区"
+    }
+  ],
+  "distance_m": [
+    [
+      0,
+      84018,
+      70447,
+      116429,
+      162574
+    ],
+    [
+      83112,
+      0,
+      18225,
+      57720,
+      109904
+    ],
+    [
+      69962,
+      17891,
+      0,
+      54510,
+      119088
+    ],
+    [
+      115751,
+      56702,
+      56209,
+      0,
+      72948
+    ],
+    [
+      161182,
+      109431,
+      120383,
+      71626,
+      0
+    ]
+  ],
+  "duration_s": [
+    [
+      0,
+      4211,
+      3650,
+      4789,
+      6484
+    ],
+    [
+      4611,
+      0,
+      1959,
+      3484,
+      4682
+    ],
+    [
+      4120,
+      1633,
+      0,
+      2799,
+      5008
+    ],
+    [
+      5997,
+      3365,
+      2699,
+      0,
+      3169
+    ],
+    [
+      7088,
+      4816,
+      4974,
+      3084,
+      0
+    ]
+  ],
+  "diagonal_policy": "Zero cost for staying at the same logical stop; raw provider diagonal preserved in matrix.json.",
+  "directed": true,
+  "complete": true,
+  "start_index": 0,
+  "end_index": 4,
+  "baseline_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

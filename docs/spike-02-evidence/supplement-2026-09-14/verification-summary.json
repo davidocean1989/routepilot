@@ -1,0 +1,310 @@
+{
+  "status": "PARTIAL",
+  "authentication": "PASS",
+  "single_request_5x5": "BLOCKED_BY_STATUS_120",
+  "assembled_5x5": "PASS",
+  "assembly": "five sequential 1x5 calls, not atomic; historical POI coordinates reused",
+  "valid_cells": 25,
+  "valid_non_diagonal_edges": 20,
+  "asymmetric_pairs": [
+    {
+      "i": 0,
+      "j": 1,
+      "forward": {
+        "distance": 84284,
+        "duration": 4694
+      },
+      "reverse": {
+        "distance": 82537,
+        "duration": 5215
+      }
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "forward": {
+        "distance": 70712,
+        "duration": 4186
+      },
+      "reverse": {
+        "distance": 69387,
+        "duration": 4755
+      }
+    },
+    {
+      "i": 0,
+      "j": 3,
+      "forward": {
+        "distance": 116695,
+        "duration": 5007
+      },
+      "reverse": {
+        "distance": 115176,
+        "duration": 5400
+      }
+    },
+    {
+      "i": 0,
+      "j": 4,
+      "forward": {
+        "distance": 162839,
+        "duration": 6791
+      },
+      "reverse": {
+        "distance": 160607,
+        "duration": 7005
+      }
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "forward": {
+        "distance": 18225,
+        "duration": 1853
+      },
+      "reverse": {
+        "distance": 17891,
+        "duration": 1864
+      }
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "forward": {
+        "distance": 57720,
+        "duration": 3689
+      },
+      "reverse": {
+        "distance": 56702,
+        "duration": 3547
+      }
+    },
+    {
+      "i": 1,
+      "j": 4,
+      "forward": {
+        "distance": 111937,
+        "duration": 5266
+      },
+      "reverse": {
+        "distance": 109431,
+        "duration": 4886
+      }
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "forward": {
+        "distance": 54510,
+        "duration": 2913
+      },
+      "reverse": {
+        "distance": 56209,
+        "duration": 2817
+      }
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "forward": {
+        "distance": 119105,
+        "duration": 5267
+      },
+      "reverse": {
+        "distance": 120383,
+        "duration": 5011
+      }
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "forward": {
+        "distance": 72966,
+        "duration": 3494
+      },
+      "reverse": {
+        "distance": 71626,
+        "duration": 3128
+      }
+    }
+  ],
+  "raw_diagonal": [
+    {
+      "distance": 1114,
+      "duration": 428
+    },
+    {
+      "distance": 0,
+      "duration": 60
+    },
+    {
+      "distance": 0,
+      "duration": 60
+    },
+    {
+      "distance": 0,
+      "duration": 60
+    },
+    {
+      "distance": 4741,
+      "duration": 500
+    }
+  ],
+  "distance_unit": "meter (official documentation)",
+  "duration_unit": "second (official documentation)",
+  "successful_call_count": 10,
+  "success_latency_ms": {
+    "min": 68.7,
+    "max": 458.72,
+    "mean": 172.26
+  },
+  "events": [
+    {
+      "case": "matrix-1x1-forward",
+      "elapsed_ms": 68.7,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    },
+    {
+      "case": "matrix-1x1-reverse",
+      "elapsed_ms": 458.72,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    },
+    {
+      "case": "matrix-5x5",
+      "elapsed_ms": 152.29,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-boundary-1x4",
+      "elapsed_ms": 105.53,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    },
+    {
+      "case": "matrix-boundary-4x1",
+      "elapsed_ms": 142.71,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    },
+    {
+      "case": "matrix-boundary-2x2",
+      "elapsed_ms": 165.87,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    },
+    {
+      "case": "matrix-boundary-8x8",
+      "elapsed_ms": 76.29,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-boundary-50x2",
+      "elapsed_ms": 121.81,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-boundary-51x2",
+      "elapsed_ms": 169.51,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-boundary-2x50",
+      "elapsed_ms": 81.6,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-boundary-2x51",
+      "elapsed_ms": 117.74,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-boundary-25x25",
+      "elapsed_ms": 146.06,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-boundary-26x25",
+      "elapsed_ms": 155.28,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-boundary-1x200",
+      "elapsed_ms": 75.38,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-boundary-1x201",
+      "elapsed_ms": 155.55,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-5x5-retry",
+      "elapsed_ms": 115.19,
+      "mcp_is_error": false,
+      "status": 120,
+      "message": "此key每秒请求量已达到上限"
+    },
+    {
+      "case": "matrix-row-0",
+      "elapsed_ms": 190.65,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    },
+    {
+      "case": "matrix-row-1",
+      "elapsed_ms": 163.81,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    },
+    {
+      "case": "matrix-row-2",
+      "elapsed_ms": 91.26,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    },
+    {
+      "case": "matrix-row-3",
+      "elapsed_ms": 175.32,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    },
+    {
+      "case": "matrix-row-4",
+      "elapsed_ms": 160.06,
+      "mcp_is_error": false,
+      "status": 0,
+      "message": "Success"
+    }
+  ]
+}
