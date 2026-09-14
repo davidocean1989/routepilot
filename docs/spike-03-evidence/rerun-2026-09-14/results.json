@@ -1,0 +1,2839 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-09-14T09:10:09.951938+00:00",
+  "python": "3.11.8 (v3.11.8:db85d51d3e, Feb  6 2024, 18:02:37) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-15.7.9-x86_64-i386-64bit",
+  "source_hashes": {
+    "first-authenticated-attempt.json": "8e57acd404b86945d0e115e489a938936e0f381ba9285aa3358e869d10b15de6",
+    "verification-summary.json": "091749fd93ff51f4d1e4027162172d4c5d3f5da86da8978a830b6f1da9c8c73a",
+    "sandbox-network-attempt.json": "48722023ac6ddd4ef22d79533f3788a8481d6f44971fa8325ca72734ee6d87ec",
+    "manifest.json": "094332cde9b7bae2a3f48f914be8b0b0b022e4520a7b716aa5369e343899cfda",
+    "recovery-probe.json": "6659383100c753e718f0349d9fb8f58120e27d09a65c133ade30cb5ea6b3250c",
+    "assembled-matrix.json": "5e77bf15ee45139c77ee3b26a6fc6c397c43af393729e2481588edd712e2bf52",
+    "live-probe.json": "a974608025eba64c33a05c52d02b1d28694d4afcdbe8e5481fa0fb3f7a9e48f6"
+  },
+  "input": {
+    "point_order": [
+      "杭州",
+      "南浔古镇",
+      "乌镇",
+      "西塘古镇",
+      "上海"
+    ],
+    "duration_s": [
+      [
+        0,
+        4694,
+        4186,
+        5007,
+        6791
+      ],
+      [
+        5215,
+        0,
+        1853,
+        3689,
+        5266
+      ],
+      [
+        4755,
+        1864,
+        0,
+        2913,
+        5267
+      ],
+      [
+        5400,
+        3547,
+        2817,
+        0,
+        3494
+      ],
+      [
+        7005,
+        4886,
+        5011,
+        3128,
+        0
+      ]
+    ],
+    "distance_m": [
+      [
+        0,
+        84284,
+        70712,
+        116695,
+        162839
+      ],
+      [
+        82537,
+        0,
+        18225,
+        57720,
+        111937
+      ],
+      [
+        69387,
+        17891,
+        0,
+        54510,
+        119105
+      ],
+      [
+        115176,
+        56702,
+        56209,
+        0,
+        72966
+      ],
+      [
+        160607,
+        109431,
+        120383,
+        71626,
+        0
+      ]
+    ],
+    "raw_diagonal": [
+      {
+        "distance": 1114,
+        "duration": 428
+      },
+      {
+        "distance": 0,
+        "duration": 60
+      },
+      {
+        "distance": 0,
+        "duration": 60
+      },
+      {
+        "distance": 0,
+        "duration": 60
+      },
+      {
+        "distance": 4741,
+        "duration": 500
+      }
+    ],
+    "provenance": [
+      {
+        "case": "matrix-row-0",
+        "sent_at": "2026-09-14T08:52:55.635433+00:00",
+        "request_id": "e8b41cf33b0945f4bc64f515028fd40d"
+      },
+      {
+        "case": "matrix-row-1",
+        "sent_at": "2026-09-14T08:53:00.827449+00:00",
+        "request_id": "afbd0f8912664a9bb7629df9d1e4b539"
+      },
+      {
+        "case": "matrix-row-2",
+        "sent_at": "2026-09-14T08:53:05.991734+00:00",
+        "request_id": "1ac5977296a046bab5cda01b7dd00bde"
+      },
+      {
+        "case": "matrix-row-3",
+        "sent_at": "2026-09-14T08:53:11.084358+00:00",
+        "request_id": "3ac9cdb813c443bf81b8c8541ff75975"
+      },
+      {
+        "case": "matrix-row-4",
+        "sent_at": "2026-09-14T08:53:16.260619+00:00",
+        "request_id": "1ddc531acf7c4dca83e2f823db9fc52f"
+      }
+    ],
+    "normalization": "Only diagonal set to zero in memory; all 20 directed edges unchanged.",
+    "atomic": false
+  },
+  "cases": [
+    {
+      "name": "real_five_fixed_end",
+      "start": 0,
+      "waypoints": [
+        2,
+        3,
+        1
+      ],
+      "end": 4,
+      "result": {
+        "objective": "fastest",
+        "original": {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "total_duration": 15912,
+          "total_distance": 293861
+        },
+        "optimized": {
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "total_duration": 12954,
+          "total_distance": 229985
+        },
+        "savings": {
+          "duration": 2958,
+          "distance": 63876,
+          "duration_percent": 18.58974358974359,
+          "distance_percent": 21.736807538257885
+        },
+        "candidates_evaluated": 6
+      },
+      "all_candidates": [
+        {
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "total_duration": 12954,
+          "total_distance": 229985
+        },
+        {
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4
+          ],
+          "total_duration": 13233,
+          "total_distance": 219289
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            1,
+            4
+          ],
+          "total_duration": 14954,
+          "total_distance": 302732
+        },
+        {
+          "order": [
+            0,
+            3,
+            1,
+            2,
+            4
+          ],
+          "total_duration": 15674,
+          "total_distance": 310727
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "total_duration": 15912,
+          "total_distance": 293861
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            2,
+            4
+          ],
+          "total_duration": 16467,
+          "total_distance": 317318
+        }
+      ]
+    },
+    {
+      "name": "real_five_fixed_end",
+      "start": 0,
+      "waypoints": [
+        2,
+        3,
+        1
+      ],
+      "end": 4,
+      "result": {
+        "objective": "shortest",
+        "original": {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "total_duration": 15912,
+          "total_distance": 293861
+        },
+        "optimized": {
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4
+          ],
+          "total_duration": 13233,
+          "total_distance": 219289
+        },
+        "savings": {
+          "duration": 2679,
+          "distance": 74572,
+          "duration_percent": 16.83634992458522,
+          "distance_percent": 25.376623641789823
+        },
+        "candidates_evaluated": 6
+      },
+      "all_candidates": [
+        {
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4
+          ],
+          "total_duration": 13233,
+          "total_distance": 219289
+        },
+        {
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "total_duration": 12954,
+          "total_distance": 229985
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "total_duration": 15912,
+          "total_distance": 293861
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            1,
+            4
+          ],
+          "total_duration": 14954,
+          "total_distance": 302732
+        },
+        {
+          "order": [
+            0,
+            3,
+            1,
+            2,
+            4
+          ],
+          "total_duration": 15674,
+          "total_distance": 310727
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            2,
+            4
+          ],
+          "total_duration": 16467,
+          "total_distance": 317318
+        }
+      ]
+    },
+    {
+      "name": "real_three_waypoints_open",
+      "start": 0,
+      "waypoints": [
+        3,
+        2,
+        1
+      ],
+      "end": null,
+      "result": {
+        "objective": "fastest",
+        "original": {
+          "order": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "total_duration": 9688,
+          "total_distance": 190795
+        },
+        "optimized": {
+          "order": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "total_duration": 9460,
+          "total_distance": 157019
+        },
+        "savings": {
+          "duration": 228,
+          "distance": 33776,
+          "duration_percent": 2.353426919900908,
+          "distance_percent": 17.70276998873136
+        },
+        "candidates_evaluated": 6
+      },
+      "all_candidates": [
+        {
+          "order": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "total_duration": 9460,
+          "total_distance": 157019
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "total_duration": 9688,
+          "total_distance": 190795
+        },
+        {
+          "order": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "total_duration": 9739,
+          "total_distance": 146323
+        },
+        {
+          "order": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "total_duration": 10407,
+          "total_distance": 191622
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "total_duration": 10646,
+          "total_distance": 181924
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "total_duration": 11200,
+          "total_distance": 198213
+        }
+      ]
+    },
+    {
+      "name": "real_three_waypoints_open",
+      "start": 0,
+      "waypoints": [
+        3,
+        2,
+        1
+      ],
+      "end": null,
+      "result": {
+        "objective": "shortest",
+        "original": {
+          "order": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "total_duration": 9688,
+          "total_distance": 190795
+        },
+        "optimized": {
+          "order": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "total_duration": 9739,
+          "total_distance": 146323
+        },
+        "savings": {
+          "duration": -51,
+          "distance": 44472,
+          "duration_percent": -0.5264244426094137,
+          "distance_percent": 23.30878691789617
+        },
+        "candidates_evaluated": 6
+      },
+      "all_candidates": [
+        {
+          "order": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "total_duration": 9739,
+          "total_distance": 146323
+        },
+        {
+          "order": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "total_duration": 9460,
+          "total_distance": 157019
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "total_duration": 10646,
+          "total_distance": 181924
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "total_duration": 9688,
+          "total_distance": 190795
+        },
+        {
+          "order": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "total_duration": 10407,
+          "total_distance": 191622
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "total_duration": 11200,
+          "total_distance": 198213
+        }
+      ]
+    },
+    {
+      "name": "real_five_open",
+      "start": 0,
+      "waypoints": [
+        2,
+        3,
+        1,
+        4
+      ],
+      "end": null,
+      "result": {
+        "objective": "fastest",
+        "original": {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "total_duration": 15912,
+          "total_distance": 293861
+        },
+        "optimized": {
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "total_duration": 12954,
+          "total_distance": 229985
+        },
+        "savings": {
+          "duration": 2958,
+          "distance": 63876,
+          "duration_percent": 18.58974358974359,
+          "distance_percent": 21.736807538257885
+        },
+        "candidates_evaluated": 24
+      },
+      "all_candidates": [
+        {
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "total_duration": 12954,
+          "total_distance": 229985
+        },
+        {
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4
+          ],
+          "total_duration": 13233,
+          "total_distance": 219289
+        },
+        {
+          "order": [
+            0,
+            2,
+            1,
+            4,
+            3
+          ],
+          "total_duration": 14444,
+          "total_distance": 272166
+        },
+        {
+          "order": [
+            0,
+            4,
+            3,
+            2,
+            1
+          ],
+          "total_duration": 14600,
+          "total_distance": 308565
+        },
+        {
+          "order": [
+            0,
+            1,
+            2,
+            4,
+            3
+          ],
+          "total_duration": 14942,
+          "total_distance": 293240
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            1,
+            4
+          ],
+          "total_duration": 14954,
+          "total_distance": 302732
+        },
+        {
+          "order": [
+            0,
+            3,
+            4,
+            1,
+            2
+          ],
+          "total_duration": 15240,
+          "total_distance": 317317
+        },
+        {
+          "order": [
+            0,
+            4,
+            3,
+            1,
+            2
+          ],
+          "total_duration": 15319,
+          "total_distance": 309392
+        },
+        {
+          "order": [
+            0,
+            3,
+            4,
+            2,
+            1
+          ],
+          "total_duration": 15376,
+          "total_distance": 327935
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            4,
+            1
+          ],
+          "total_duration": 15479,
+          "total_distance": 307619
+        },
+        {
+          "order": [
+            0,
+            3,
+            1,
+            2,
+            4
+          ],
+          "total_duration": 15674,
+          "total_distance": 310727
+        },
+        {
+          "order": [
+            0,
+            1,
+            4,
+            3,
+            2
+          ],
+          "total_duration": 15905,
+          "total_distance": 324056
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "total_duration": 15912,
+          "total_distance": 293861
+        },
+        {
+          "order": [
+            0,
+            2,
+            4,
+            3,
+            1
+          ],
+          "total_duration": 16128,
+          "total_distance": 318145
+        },
+        {
+          "order": [
+            0,
+            4,
+            1,
+            2,
+            3
+          ],
+          "total_duration": 16443,
+          "total_distance": 345005
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            2,
+            4
+          ],
+          "total_duration": 16467,
+          "total_distance": 317318
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            4,
+            2
+          ],
+          "total_duration": 16888,
+          "total_distance": 335353
+        },
+        {
+          "order": [
+            0,
+            4,
+            2,
+            1,
+            3
+          ],
+          "total_duration": 17355,
+          "total_distance": 358833
+        },
+        {
+          "order": [
+            0,
+            1,
+            4,
+            2,
+            3
+          ],
+          "total_duration": 17884,
+          "total_distance": 371114
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            4,
+            1
+          ],
+          "total_duration": 17977,
+          "total_distance": 401440
+        },
+        {
+          "order": [
+            0,
+            2,
+            4,
+            1,
+            3
+          ],
+          "total_duration": 18028,
+          "total_distance": 356968
+        },
+        {
+          "order": [
+            0,
+            4,
+            1,
+            3,
+            2
+          ],
+          "total_duration": 18183,
+          "total_distance": 386199
+        },
+        {
+          "order": [
+            0,
+            4,
+            2,
+            3,
+            1
+          ],
+          "total_duration": 18262,
+          "total_distance": 394434
+        },
+        {
+          "order": [
+            0,
+            3,
+            1,
+            4,
+            2
+          ],
+          "total_duration": 18831,
+          "total_distance": 405717
+        }
+      ]
+    },
+    {
+      "name": "real_five_open",
+      "start": 0,
+      "waypoints": [
+        2,
+        3,
+        1,
+        4
+      ],
+      "end": null,
+      "result": {
+        "objective": "shortest",
+        "original": {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "total_duration": 15912,
+          "total_distance": 293861
+        },
+        "optimized": {
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4
+          ],
+          "total_duration": 13233,
+          "total_distance": 219289
+        },
+        "savings": {
+          "duration": 2679,
+          "distance": 74572,
+          "duration_percent": 16.83634992458522,
+          "distance_percent": 25.376623641789823
+        },
+        "candidates_evaluated": 24
+      },
+      "all_candidates": [
+        {
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4
+          ],
+          "total_duration": 13233,
+          "total_distance": 219289
+        },
+        {
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "total_duration": 12954,
+          "total_distance": 229985
+        },
+        {
+          "order": [
+            0,
+            2,
+            1,
+            4,
+            3
+          ],
+          "total_duration": 14444,
+          "total_distance": 272166
+        },
+        {
+          "order": [
+            0,
+            1,
+            2,
+            4,
+            3
+          ],
+          "total_duration": 14942,
+          "total_distance": 293240
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "total_duration": 15912,
+          "total_distance": 293861
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            1,
+            4
+          ],
+          "total_duration": 14954,
+          "total_distance": 302732
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            4,
+            1
+          ],
+          "total_duration": 15479,
+          "total_distance": 307619
+        },
+        {
+          "order": [
+            0,
+            4,
+            3,
+            2,
+            1
+          ],
+          "total_duration": 14600,
+          "total_distance": 308565
+        },
+        {
+          "order": [
+            0,
+            4,
+            3,
+            1,
+            2
+          ],
+          "total_duration": 15319,
+          "total_distance": 309392
+        },
+        {
+          "order": [
+            0,
+            3,
+            1,
+            2,
+            4
+          ],
+          "total_duration": 15674,
+          "total_distance": 310727
+        },
+        {
+          "order": [
+            0,
+            3,
+            4,
+            1,
+            2
+          ],
+          "total_duration": 15240,
+          "total_distance": 317317
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            2,
+            4
+          ],
+          "total_duration": 16467,
+          "total_distance": 317318
+        },
+        {
+          "order": [
+            0,
+            2,
+            4,
+            3,
+            1
+          ],
+          "total_duration": 16128,
+          "total_distance": 318145
+        },
+        {
+          "order": [
+            0,
+            1,
+            4,
+            3,
+            2
+          ],
+          "total_duration": 15905,
+          "total_distance": 324056
+        },
+        {
+          "order": [
+            0,
+            3,
+            4,
+            2,
+            1
+          ],
+          "total_duration": 15376,
+          "total_distance": 327935
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            4,
+            2
+          ],
+          "total_duration": 16888,
+          "total_distance": 335353
+        },
+        {
+          "order": [
+            0,
+            4,
+            1,
+            2,
+            3
+          ],
+          "total_duration": 16443,
+          "total_distance": 345005
+        },
+        {
+          "order": [
+            0,
+            2,
+            4,
+            1,
+            3
+          ],
+          "total_duration": 18028,
+          "total_distance": 356968
+        },
+        {
+          "order": [
+            0,
+            4,
+            2,
+            1,
+            3
+          ],
+          "total_duration": 17355,
+          "total_distance": 358833
+        },
+        {
+          "order": [
+            0,
+            1,
+            4,
+            2,
+            3
+          ],
+          "total_duration": 17884,
+          "total_distance": 371114
+        },
+        {
+          "order": [
+            0,
+            4,
+            1,
+            3,
+            2
+          ],
+          "total_duration": 18183,
+          "total_distance": 386199
+        },
+        {
+          "order": [
+            0,
+            4,
+            2,
+            3,
+            1
+          ],
+          "total_duration": 18262,
+          "total_distance": 394434
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            4,
+            1
+          ],
+          "total_duration": 17977,
+          "total_distance": 401440
+        },
+        {
+          "order": [
+            0,
+            3,
+            1,
+            4,
+            2
+          ],
+          "total_duration": 18831,
+          "total_distance": 405717
+        }
+      ]
+    },
+    {
+      "name": "real_reverse_fixed_end",
+      "start": 4,
+      "waypoints": [
+        1,
+        3,
+        2
+      ],
+      "end": 0,
+      "result": {
+        "objective": "fastest",
+        "original": {
+          "order": [
+            4,
+            1,
+            3,
+            2,
+            0
+          ],
+          "total_duration": 16147,
+          "total_distance": 292747
+        },
+        "optimized": {
+          "order": [
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "total_duration": 13024,
+          "total_distance": 228263
+        },
+        "savings": {
+          "duration": 3123,
+          "distance": 64484,
+          "duration_percent": 19.34105406577073,
+          "distance_percent": 22.027211209679347
+        },
+        "candidates_evaluated": 6
+      },
+      "all_candidates": [
+        {
+          "order": [
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "total_duration": 13024,
+          "total_distance": 228263
+        },
+        {
+          "order": [
+            4,
+            3,
+            1,
+            2,
+            0
+          ],
+          "total_duration": 13283,
+          "total_distance": 215940
+        },
+        {
+          "order": [
+            4,
+            1,
+            2,
+            3,
+            0
+          ],
+          "total_duration": 15052,
+          "total_distance": 297342
+        },
+        {
+          "order": [
+            4,
+            2,
+            1,
+            3,
+            0
+          ],
+          "total_duration": 15964,
+          "total_distance": 311170
+        },
+        {
+          "order": [
+            4,
+            1,
+            3,
+            2,
+            0
+          ],
+          "total_duration": 16147,
+          "total_distance": 292747
+        },
+        {
+          "order": [
+            4,
+            2,
+            3,
+            1,
+            0
+          ],
+          "total_duration": 16686,
+          "total_distance": 314132
+        }
+      ]
+    },
+    {
+      "name": "real_reverse_fixed_end",
+      "start": 4,
+      "waypoints": [
+        1,
+        3,
+        2
+      ],
+      "end": 0,
+      "result": {
+        "objective": "shortest",
+        "original": {
+          "order": [
+            4,
+            1,
+            3,
+            2,
+            0
+          ],
+          "total_duration": 16147,
+          "total_distance": 292747
+        },
+        "optimized": {
+          "order": [
+            4,
+            3,
+            1,
+            2,
+            0
+          ],
+          "total_duration": 13283,
+          "total_distance": 215940
+        },
+        "savings": {
+          "duration": 2864,
+          "distance": 76807,
+          "duration_percent": 17.737040936396852,
+          "distance_percent": 26.236648027136063
+        },
+        "candidates_evaluated": 6
+      },
+      "all_candidates": [
+        {
+          "order": [
+            4,
+            3,
+            1,
+            2,
+            0
+          ],
+          "total_duration": 13283,
+          "total_distance": 215940
+        },
+        {
+          "order": [
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "total_duration": 13024,
+          "total_distance": 228263
+        },
+        {
+          "order": [
+            4,
+            1,
+            3,
+            2,
+            0
+          ],
+          "total_duration": 16147,
+          "total_distance": 292747
+        },
+        {
+          "order": [
+            4,
+            1,
+            2,
+            3,
+            0
+          ],
+          "total_duration": 15052,
+          "total_distance": 297342
+        },
+        {
+          "order": [
+            4,
+            2,
+            1,
+            3,
+            0
+          ],
+          "total_duration": 15964,
+          "total_distance": 311170
+        },
+        {
+          "order": [
+            4,
+            2,
+            3,
+            1,
+            0
+          ],
+          "total_duration": 16686,
+          "total_distance": 314132
+        }
+      ]
+    },
+    {
+      "name": "real_return_to_start",
+      "start": 0,
+      "waypoints": [
+        3,
+        2,
+        1
+      ],
+      "end": 0,
+      "result": {
+        "objective": "fastest",
+        "original": {
+          "order": [
+            0,
+            3,
+            2,
+            1,
+            0
+          ],
+          "total_duration": 14903,
+          "total_distance": 273332
+        },
+        "optimized": {
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            0
+          ],
+          "total_duration": 14860,
+          "total_distance": 272195
+        },
+        "savings": {
+          "duration": 43,
+          "distance": 1137,
+          "duration_percent": 0.28853251023283905,
+          "distance_percent": 0.4159776389153118
+        },
+        "candidates_evaluated": 6
+      },
+      "all_candidates": [
+        {
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            0
+          ],
+          "total_duration": 14860,
+          "total_distance": 272195
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            1,
+            0
+          ],
+          "total_duration": 14903,
+          "total_distance": 273332
+        },
+        {
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            0
+          ],
+          "total_duration": 15139,
+          "total_distance": 261499
+        },
+        {
+          "order": [
+            0,
+            3,
+            1,
+            2,
+            0
+          ],
+          "total_duration": 15162,
+          "total_distance": 261009
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            0
+          ],
+          "total_duration": 15861,
+          "total_distance": 264461
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            2,
+            0
+          ],
+          "total_duration": 15955,
+          "total_distance": 267600
+        }
+      ]
+    },
+    {
+      "name": "real_return_to_start",
+      "start": 0,
+      "waypoints": [
+        3,
+        2,
+        1
+      ],
+      "end": 0,
+      "result": {
+        "objective": "shortest",
+        "original": {
+          "order": [
+            0,
+            3,
+            2,
+            1,
+            0
+          ],
+          "total_duration": 14903,
+          "total_distance": 273332
+        },
+        "optimized": {
+          "order": [
+            0,
+            3,
+            1,
+            2,
+            0
+          ],
+          "total_duration": 15162,
+          "total_distance": 261009
+        },
+        "savings": {
+          "duration": -259,
+          "distance": 12323,
+          "duration_percent": -1.737905119774542,
+          "distance_percent": 4.50843662652013
+        },
+        "candidates_evaluated": 6
+      },
+      "all_candidates": [
+        {
+          "order": [
+            0,
+            3,
+            1,
+            2,
+            0
+          ],
+          "total_duration": 15162,
+          "total_distance": 261009
+        },
+        {
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            0
+          ],
+          "total_duration": 15139,
+          "total_distance": 261499
+        },
+        {
+          "order": [
+            0,
+            2,
+            3,
+            1,
+            0
+          ],
+          "total_duration": 15861,
+          "total_distance": 264461
+        },
+        {
+          "order": [
+            0,
+            1,
+            3,
+            2,
+            0
+          ],
+          "total_duration": 15955,
+          "total_distance": 267600
+        },
+        {
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            0
+          ],
+          "total_duration": 14860,
+          "total_distance": 272195
+        },
+        {
+          "order": [
+            0,
+            3,
+            2,
+            1,
+            0
+          ],
+          "total_duration": 14903,
+          "total_distance": 273332
+        }
+      ]
+    }
+  ],
+  "three_total_points_reference_only": {
+    "fastest": [
+      {
+        "order": [
+          0,
+          2,
+          1
+        ],
+        "total_duration": 6050,
+        "total_distance": 88603
+      },
+      {
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "total_duration": 6547,
+        "total_distance": 102509
+      }
+    ],
+    "shortest": [
+      {
+        "order": [
+          0,
+          2,
+          1
+        ],
+        "total_duration": 6050,
+        "total_distance": 88603
+      },
+      {
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "total_duration": 6547,
+        "total_distance": 102509
+      }
+    ]
+  },
+  "benchmarks": [
+    {
+      "waypoints": 3,
+      "total_points": 5,
+      "objective": "fastest",
+      "source": "real Spike 02",
+      "duration_s": [
+        [
+          0,
+          4694,
+          4186,
+          5007,
+          6791
+        ],
+        [
+          5215,
+          0,
+          1853,
+          3689,
+          5266
+        ],
+        [
+          4755,
+          1864,
+          0,
+          2913,
+          5267
+        ],
+        [
+          5400,
+          3547,
+          2817,
+          0,
+          3494
+        ],
+        [
+          7005,
+          4886,
+          5011,
+          3128,
+          0
+        ]
+      ],
+      "distance_m": [
+        [
+          0,
+          84284,
+          70712,
+          116695,
+          162839
+        ],
+        [
+          82537,
+          0,
+          18225,
+          57720,
+          111937
+        ],
+        [
+          69387,
+          17891,
+          0,
+          54510,
+          119105
+        ],
+        [
+          115176,
+          56702,
+          56209,
+          0,
+          72966
+        ],
+        [
+          160607,
+          109431,
+          120383,
+          71626,
+          0
+        ]
+      ],
+      "candidates": 6,
+      "samples_ms": [
+        0.027237,
+        0.031448,
+        0.041037,
+        0.021643,
+        0.091197,
+        0.020088,
+        0.019716,
+        0.019271,
+        0.019199,
+        0.018808,
+        0.018954,
+        0.018786,
+        0.018978,
+        0.01901,
+        0.01881,
+        0.023275,
+        0.019628,
+        0.018748,
+        0.018794,
+        0.01894,
+        0.018857,
+        0.019031,
+        0.018918,
+        0.025463,
+        0.046205,
+        0.020184,
+        0.019015,
+        0.019015,
+        0.020327,
+        0.023838
+      ],
+      "median_ms": 0.019235000000000002,
+      "p95_ms": 0.046205,
+      "min_ms": 0.018748,
+      "max_ms": 0.091197
+    },
+    {
+      "waypoints": 3,
+      "total_points": 5,
+      "objective": "shortest",
+      "source": "real Spike 02",
+      "duration_s": [
+        [
+          0,
+          4694,
+          4186,
+          5007,
+          6791
+        ],
+        [
+          5215,
+          0,
+          1853,
+          3689,
+          5266
+        ],
+        [
+          4755,
+          1864,
+          0,
+          2913,
+          5267
+        ],
+        [
+          5400,
+          3547,
+          2817,
+          0,
+          3494
+        ],
+        [
+          7005,
+          4886,
+          5011,
+          3128,
+          0
+        ]
+      ],
+      "distance_m": [
+        [
+          0,
+          84284,
+          70712,
+          116695,
+          162839
+        ],
+        [
+          82537,
+          0,
+          18225,
+          57720,
+          111937
+        ],
+        [
+          69387,
+          17891,
+          0,
+          54510,
+          119105
+        ],
+        [
+          115176,
+          56702,
+          56209,
+          0,
+          72966
+        ],
+        [
+          160607,
+          109431,
+          120383,
+          71626,
+          0
+        ]
+      ],
+      "candidates": 6,
+      "samples_ms": [
+        0.019998,
+        0.020474,
+        0.01921,
+        0.019821,
+        0.019148,
+        0.027265,
+        0.030936,
+        0.025622,
+        0.019541,
+        0.019267,
+        0.01916,
+        0.053951,
+        0.035333,
+        0.026889,
+        0.020042,
+        0.023546,
+        0.020138,
+        0.019841,
+        0.019245,
+        0.019497,
+        0.019109,
+        0.0226,
+        0.026454,
+        0.030175,
+        0.031007,
+        0.02614,
+        0.019501,
+        0.019095,
+        0.019316,
+        0.018943
+      ],
+      "median_ms": 0.02002,
+      "p95_ms": 0.035333,
+      "min_ms": 0.018943,
+      "max_ms": 0.053951
+    },
+    {
+      "waypoints": 5,
+      "total_points": 7,
+      "objective": "fastest",
+      "source": "synthetic performance only, seed 303",
+      "duration_s": [
+        [
+          0,
+          519,
+          3936,
+          3194,
+          1506,
+          9277,
+          4239
+        ],
+        [
+          9286,
+          0,
+          8459,
+          6526,
+          2584,
+          6713,
+          7748
+        ],
+        [
+          9548,
+          1447,
+          0,
+          4204,
+          8660,
+          8912,
+          528
+        ],
+        [
+          9730,
+          1990,
+          6409,
+          0,
+          2264,
+          8076,
+          4750
+        ],
+        [
+          68,
+          6763,
+          4591,
+          631,
+          0,
+          3756,
+          3528
+        ],
+        [
+          5535,
+          2435,
+          2572,
+          3408,
+          9651,
+          0,
+          4813
+        ],
+        [
+          1766,
+          4074,
+          8582,
+          4121,
+          8612,
+          4085,
+          0
+        ]
+      ],
+      "distance_m": [
+        [
+          0,
+          96029,
+          2783,
+          35692,
+          99198,
+          36087,
+          90574
+        ],
+        [
+          82979,
+          0,
+          16730,
+          95292,
+          46193,
+          9430,
+          84368
+        ],
+        [
+          64658,
+          22100,
+          0,
+          35445,
+          72525,
+          18408,
+          16125
+        ],
+        [
+          87143,
+          95786,
+          84081,
+          0,
+          22825,
+          63551,
+          12270
+        ],
+        [
+          23945,
+          49210,
+          5041,
+          42280,
+          0,
+          75394,
+          83790
+        ],
+        [
+          30938,
+          21760,
+          93971,
+          82033,
+          9476,
+          0,
+          92464
+        ],
+        [
+          56499,
+          278,
+          13984,
+          42485,
+          17678,
+          22136,
+          0
+        ]
+      ],
+      "candidates": 120,
+      "samples_ms": [
+        0.19751,
+        0.198403,
+        0.195007,
+        0.190693,
+        0.375022,
+        0.314295,
+        0.193379,
+        0.188387,
+        0.189371,
+        0.190411,
+        0.186408,
+        0.190519,
+        0.18557,
+        0.187179,
+        0.18754,
+        0.186859,
+        0.190321,
+        0.185654,
+        0.188707,
+        0.185302,
+        0.186525,
+        0.23495,
+        0.266338,
+        0.241739,
+        0.218191,
+        0.188741,
+        0.185619,
+        0.263305,
+        0.20068,
+        0.263042
+      ],
+      "median_ms": 0.190465,
+      "p95_ms": 0.314295,
+      "min_ms": 0.185302,
+      "max_ms": 0.375022
+    },
+    {
+      "waypoints": 5,
+      "total_points": 7,
+      "objective": "shortest",
+      "source": "synthetic performance only, seed 303",
+      "duration_s": [
+        [
+          0,
+          519,
+          3936,
+          3194,
+          1506,
+          9277,
+          4239
+        ],
+        [
+          9286,
+          0,
+          8459,
+          6526,
+          2584,
+          6713,
+          7748
+        ],
+        [
+          9548,
+          1447,
+          0,
+          4204,
+          8660,
+          8912,
+          528
+        ],
+        [
+          9730,
+          1990,
+          6409,
+          0,
+          2264,
+          8076,
+          4750
+        ],
+        [
+          68,
+          6763,
+          4591,
+          631,
+          0,
+          3756,
+          3528
+        ],
+        [
+          5535,
+          2435,
+          2572,
+          3408,
+          9651,
+          0,
+          4813
+        ],
+        [
+          1766,
+          4074,
+          8582,
+          4121,
+          8612,
+          4085,
+          0
+        ]
+      ],
+      "distance_m": [
+        [
+          0,
+          96029,
+          2783,
+          35692,
+          99198,
+          36087,
+          90574
+        ],
+        [
+          82979,
+          0,
+          16730,
+          95292,
+          46193,
+          9430,
+          84368
+        ],
+        [
+          64658,
+          22100,
+          0,
+          35445,
+          72525,
+          18408,
+          16125
+        ],
+        [
+          87143,
+          95786,
+          84081,
+          0,
+          22825,
+          63551,
+          12270
+        ],
+        [
+          23945,
+          49210,
+          5041,
+          42280,
+          0,
+          75394,
+          83790
+        ],
+        [
+          30938,
+          21760,
+          93971,
+          82033,
+          9476,
+          0,
+          92464
+        ],
+        [
+          56499,
+          278,
+          13984,
+          42485,
+          17678,
+          22136,
+          0
+        ]
+      ],
+      "candidates": 120,
+      "samples_ms": [
+        0.193278,
+        0.187306,
+        0.211557,
+        0.189818,
+        0.186256,
+        0.184399,
+        0.185142,
+        0.1853,
+        0.185262,
+        0.185183,
+        0.186143,
+        0.183978,
+        0.184055,
+        0.185914,
+        0.184229,
+        0.186133,
+        0.185138,
+        0.191352,
+        0.184563,
+        0.184901,
+        0.185252,
+        0.184672,
+        0.1846,
+        0.184252,
+        0.183685,
+        0.186498,
+        0.185,
+        0.185121,
+        0.203129,
+        0.49381
+      ],
+      "median_ms": 0.18521749999999998,
+      "p95_ms": 0.211557,
+      "min_ms": 0.183685,
+      "max_ms": 0.49381
+    },
+    {
+      "waypoints": 8,
+      "total_points": 10,
+      "objective": "fastest",
+      "source": "synthetic performance only, seed 303",
+      "duration_s": [
+        [
+          0,
+          4120,
+          3143,
+          442,
+          8418,
+          68,
+          4233,
+          8770,
+          455,
+          1033
+        ],
+        [
+          4152,
+          0,
+          3168,
+          8256,
+          2994,
+          6174,
+          652,
+          8107,
+          8197,
+          2524
+        ],
+        [
+          9465,
+          3024,
+          0,
+          9468,
+          1046,
+          1154,
+          7953,
+          6734,
+          2462,
+          3466
+        ],
+        [
+          8463,
+          7383,
+          5725,
+          0,
+          8218,
+          6896,
+          5571,
+          634,
+          7862,
+          7660
+        ],
+        [
+          6887,
+          417,
+          8665,
+          4861,
+          0,
+          6511,
+          7094,
+          1276,
+          3302,
+          7503
+        ],
+        [
+          8261,
+          2613,
+          5200,
+          8840,
+          9116,
+          0,
+          7963,
+          8809,
+          1397,
+          4193
+        ],
+        [
+          2550,
+          2440,
+          5575,
+          4421,
+          5504,
+          3849,
+          0,
+          5893,
+          7606,
+          4370
+        ],
+        [
+          720,
+          9600,
+          4195,
+          3622,
+          5476,
+          4665,
+          8335,
+          0,
+          2548,
+          9040
+        ],
+        [
+          5249,
+          4197,
+          6439,
+          8730,
+          432,
+          2552,
+          339,
+          1351,
+          0,
+          4200
+        ],
+        [
+          4454,
+          9848,
+          429,
+          6870,
+          6391,
+          3200,
+          687,
+          4937,
+          2681,
+          0
+        ]
+      ],
+      "distance_m": [
+        [
+          0,
+          34868,
+          68114,
+          23264,
+          52790,
+          41620,
+          16029,
+          21031,
+          87417,
+          96692
+        ],
+        [
+          62054,
+          0,
+          94108,
+          85447,
+          36241,
+          66079,
+          47524,
+          95336,
+          22980,
+          93605
+        ],
+        [
+          55527,
+          44641,
+          0,
+          71998,
+          24242,
+          75005,
+          55804,
+          9285,
+          2638,
+          6237
+        ],
+        [
+          30947,
+          63740,
+          43112,
+          0,
+          92470,
+          49452,
+          99835,
+          72846,
+          95912,
+          71853
+        ],
+        [
+          28793,
+          58911,
+          9880,
+          60774,
+          0,
+          40737,
+          39713,
+          17810,
+          52154,
+          98283
+        ],
+        [
+          99455,
+          60981,
+          59591,
+          66559,
+          17681,
+          0,
+          87001,
+          18709,
+          90193,
+          68369
+        ],
+        [
+          31166,
+          1463,
+          92172,
+          98118,
+          13263,
+          64698,
+          0,
+          23382,
+          14963,
+          14601
+        ],
+        [
+          59488,
+          48718,
+          74595,
+          87463,
+          54947,
+          44319,
+          718,
+          0,
+          9868,
+          15818
+        ],
+        [
+          35312,
+          59964,
+          16630,
+          10243,
+          53107,
+          99537,
+          51311,
+          82116,
+          0,
+          41227
+        ],
+        [
+          3930,
+          67439,
+          87406,
+          34544,
+          32766,
+          59358,
+          82122,
+          64204,
+          44723,
+          0
+        ]
+      ],
+      "candidates": 40320,
+      "samples_ms": [
+        86.664534,
+        78.65466,
+        77.118294,
+        74.518291,
+        71.851269,
+        71.579018,
+        71.963636,
+        70.781487,
+        70.293833,
+        69.988222,
+        72.471847,
+        71.298698,
+        73.257695,
+        72.648106,
+        72.005241,
+        70.234611,
+        68.954509,
+        72.400823,
+        69.848378,
+        69.75202,
+        69.768072,
+        69.500024,
+        68.44304,
+        68.902452,
+        68.772838,
+        67.802629,
+        70.284615,
+        77.684229,
+        80.32441,
+        71.172413
+      ],
+      "median_ms": 71.2355555,
+      "p95_ms": 80.32441,
+      "min_ms": 67.802629,
+      "max_ms": 86.664534
+    },
+    {
+      "waypoints": 8,
+      "total_points": 10,
+      "objective": "shortest",
+      "source": "synthetic performance only, seed 303",
+      "duration_s": [
+        [
+          0,
+          4120,
+          3143,
+          442,
+          8418,
+          68,
+          4233,
+          8770,
+          455,
+          1033
+        ],
+        [
+          4152,
+          0,
+          3168,
+          8256,
+          2994,
+          6174,
+          652,
+          8107,
+          8197,
+          2524
+        ],
+        [
+          9465,
+          3024,
+          0,
+          9468,
+          1046,
+          1154,
+          7953,
+          6734,
+          2462,
+          3466
+        ],
+        [
+          8463,
+          7383,
+          5725,
+          0,
+          8218,
+          6896,
+          5571,
+          634,
+          7862,
+          7660
+        ],
+        [
+          6887,
+          417,
+          8665,
+          4861,
+          0,
+          6511,
+          7094,
+          1276,
+          3302,
+          7503
+        ],
+        [
+          8261,
+          2613,
+          5200,
+          8840,
+          9116,
+          0,
+          7963,
+          8809,
+          1397,
+          4193
+        ],
+        [
+          2550,
+          2440,
+          5575,
+          4421,
+          5504,
+          3849,
+          0,
+          5893,
+          7606,
+          4370
+        ],
+        [
+          720,
+          9600,
+          4195,
+          3622,
+          5476,
+          4665,
+          8335,
+          0,
+          2548,
+          9040
+        ],
+        [
+          5249,
+          4197,
+          6439,
+          8730,
+          432,
+          2552,
+          339,
+          1351,
+          0,
+          4200
+        ],
+        [
+          4454,
+          9848,
+          429,
+          6870,
+          6391,
+          3200,
+          687,
+          4937,
+          2681,
+          0
+        ]
+      ],
+      "distance_m": [
+        [
+          0,
+          34868,
+          68114,
+          23264,
+          52790,
+          41620,
+          16029,
+          21031,
+          87417,
+          96692
+        ],
+        [
+          62054,
+          0,
+          94108,
+          85447,
+          36241,
+          66079,
+          47524,
+          95336,
+          22980,
+          93605
+        ],
+        [
+          55527,
+          44641,
+          0,
+          71998,
+          24242,
+          75005,
+          55804,
+          9285,
+          2638,
+          6237
+        ],
+        [
+          30947,
+          63740,
+          43112,
+          0,
+          92470,
+          49452,
+          99835,
+          72846,
+          95912,
+          71853
+        ],
+        [
+          28793,
+          58911,
+          9880,
+          60774,
+          0,
+          40737,
+          39713,
+          17810,
+          52154,
+          98283
+        ],
+        [
+          99455,
+          60981,
+          59591,
+          66559,
+          17681,
+          0,
+          87001,
+          18709,
+          90193,
+          68369
+        ],
+        [
+          31166,
+          1463,
+          92172,
+          98118,
+          13263,
+          64698,
+          0,
+          23382,
+          14963,
+          14601
+        ],
+        [
+          59488,
+          48718,
+          74595,
+          87463,
+          54947,
+          44319,
+          718,
+          0,
+          9868,
+          15818
+        ],
+        [
+          35312,
+          59964,
+          16630,
+          10243,
+          53107,
+          99537,
+          51311,
+          82116,
+          0,
+          41227
+        ],
+        [
+          3930,
+          67439,
+          87406,
+          34544,
+          32766,
+          59358,
+          82122,
+          64204,
+          44723,
+          0
+        ]
+      ],
+      "candidates": 40320,
+      "samples_ms": [
+        74.214887,
+        73.95359,
+        70.382997,
+        72.368526,
+        70.52444,
+        76.183515,
+        78.974104,
+        77.823499,
+        70.133031,
+        71.548899,
+        72.371638,
+        72.194825,
+        73.35136,
+        74.942287,
+        77.735247,
+        79.90477,
+        82.776022,
+        83.74226,
+        75.900671,
+        73.893939,
+        73.392966,
+        113.870375,
+        75.75288,
+        78.046074,
+        81.758717,
+        82.779416,
+        83.816708,
+        78.482273,
+        96.128336,
+        81.565181
+      ],
+      "median_ms": 76.042093,
+      "p95_ms": 96.128336,
+      "min_ms": 70.133031,
+      "max_ms": 113.870375
+    }
+  ],
+  "benchmark_protocol": "1 warmup + 30 samples; full function; no IO/network; fixed distinct end; nearest-rank P95",
+  "unit_test_exit_code": 0,
+  "code_hashes": {
+    "routepilot/optimizer.py": "8750fdbf27216586beb90ab6ae4c06c334c520387e5ed7a3b21b90596e53a1ff",
+    "scripts/rerun_spike03.py": "d35ba47f6211a4fac2b5c81be04867c2a8d18a6fc7a201ebf1c13f256bae6c42",
+    "tests/test_optimizer.py": "99d8998415adc34765c6b380ec0a53a4639c136bec0c36c1a76004aebced9b7b",
+    "tests/test_spike03_supplement.py": "ec888e79364b3c3b3c87ace5cc8e0ac3f1af167afd90eeccec098d5ac3887da6"
+  }
+}

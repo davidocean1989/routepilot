@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "verification": "11 tests pass; source and code hashes unchanged; report links resolve; 30 benchmark samples per group",
+  "files": [
+    {
+      "path": "docs/technical-spike-03.md",
+      "bytes": 10885,
+      "sha256": "2f89a5bccbfffd5c7ad995e50765189dad3d1c9b3067fd1772162fd6d9159f8c"
+    },
+    {
+      "path": "routepilot/optimizer.py",
+      "bytes": 5045,
+      "sha256": "8750fdbf27216586beb90ab6ae4c06c334c520387e5ed7a3b21b90596e53a1ff"
+    },
+    {
+      "path": "routepilot/__init__.py",
+      "bytes": 123,
+      "sha256": "6dc90347ebef690d7d004ad1fa7f3a1b8d664ee0796174f3d200b4bed9e735d2"
+    },
+    {
+      "path": "tests/test_optimizer.py",
+      "bytes": 5992,
+      "sha256": "99d8998415adc34765c6b380ec0a53a4639c136bec0c36c1a76004aebced9b7b"
+    },
+    {
+      "path": "tests/test_spike03_supplement.py",
+      "bytes": 1991,
+      "sha256": "ec888e79364b3c3b3c87ace5cc8e0ac3f1af167afd90eeccec098d5ac3887da6"
+    },
+    {
+      "path": "scripts/rerun_spike03.py",
+      "bytes": 6558,
+      "sha256": "d35ba47f6211a4fac2b5c81be04867c2a8d18a6fc7a201ebf1c13f256bae6c42"
+    },
+    {
+      "path": "docs/spike-03-evidence/rerun-2026-09-14/results.json",
+      "bytes": 50654,
+      "sha256": "1d744716445996bb43a4f3ddbc41e09af1e35d1bfbb56cb357ff88e41ccf8b13"
+    },
+    {
+      "path": "docs/spike-03-evidence/rerun-2026-09-14/unit-tests.txt",
+      "bytes": 1290,
+      "sha256": "b39d9d273038f7fe95ca7302ec7b073abad7f4a70a9d534345ac56f6963548cb"
+    },
+    {
+      "path": "docs/spike-03-evidence/rerun-2026-09-14/final-archive-summary.md",
+      "bytes": 1793,
+      "sha256": "dbccbe16aebeaa0629971b9e562539aedb9c1fb19b8f7d370dd72d0134497898"
+    },
+    {
+      "path": "docs/spike-03-evidence/rerun-2026-09-14/previous-report.md",
+      "bytes": 13925,
+      "sha256": "43f14b9dc14e3844fef60ea8f06f10f38465de8bd55b0479723790776c4a4f3a"
+    }
+  ]
+}

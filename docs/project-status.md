@@ -23,7 +23,7 @@
 
 - Spike 01：本地报告记载最小链路通过，归档日期 2026-09-12；仓库已有报告及六份证据，本次未修改，也未重跑地图接口。
 - Spike 02：本次重跑 rebuilding / pending archive。本地有历史报告，但未确认对应本次重跑的最终归档摘要。
-- Spike 03：本次重跑 rebuilding / pending archive。本地存在 2026-09-12 归档摘要与 ZIP；是否对应本次重跑待核对。
+- Spike 03：**PASS**。2026-09-14 基于 Spike 02 真实矩阵完成重跑，11 项测试通过；正式报告 `docs/technical-spike-03.md` 与完整证据 `docs/spike-03-evidence/` 已归档。
 - Spike 04：本次重跑 rebuilding / pending archive。本地存在 2026-09-12 导航归档摘要与 ZIP，并存在另一份预定时间实验；需核对重跑版本及实验范围。
 
 以上 pending 状态针对本次重跑版本核对，不否定已有本地历史归档。原始归档、先前发布副本和本次回传文件均保留。

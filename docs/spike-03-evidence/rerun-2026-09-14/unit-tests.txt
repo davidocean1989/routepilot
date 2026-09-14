@@ -1,0 +1,16 @@
+test_directed_open_path_and_objective_tradeoff (test_optimizer.OptimizerTests.test_directed_open_path_and_objective_tradeoff) ... ok
+test_invalid_inputs (test_optimizer.OptimizerTests.test_invalid_inputs) ... ok
+test_random_matrices_against_independent_dp (test_optimizer.OptimizerTests.test_random_matrices_against_independent_dp) ... ok
+test_real_fixed_end (test_optimizer.OptimizerTests.test_real_fixed_end) ... ok
+test_return_to_start (test_optimizer.OptimizerTests.test_return_to_start) ... ok
+test_symmetric_matrix (test_optimizer.OptimizerTests.test_symmetric_matrix) ... ok
+test_ties_secondary_then_lexicographic (test_optimizer.OptimizerTests.test_ties_secondary_then_lexicographic) ... ok
+test_zero_costs_and_no_mutation (test_optimizer.OptimizerTests.test_zero_costs_and_no_mutation) ... ok
+test_raw_provenance_and_directed_edges (test_spike03_supplement.SupplementTests.test_raw_provenance_and_directed_edges) ... ok
+test_real_five_point_results_and_dp (test_spike03_supplement.SupplementTests.test_real_five_point_results_and_dp) ... ok
+test_real_optional_end_and_asymmetric_reverse (test_spike03_supplement.SupplementTests.test_real_optional_end_and_asymmetric_reverse) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.605s
+
+OK

@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-09-12T00:56:18.759233+00:00",
+  "checks": [
+    "input SHA-256 unchanged",
+    "5x5 finite nonnegative matrices and zero diagonal",
+    "all 20 directed edges match original MCP evidence",
+    "six unique fixed-endpoint Hamiltonian paths",
+    "independent dynamic programming confirms time and distance optimum",
+    "explicit six-route totals match",
+    "savings arithmetic verified"
+  ],
+  "passed": true
+}

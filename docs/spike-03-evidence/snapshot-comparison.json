@@ -1,0 +1,194 @@
+[
+  {
+    "round": 1,
+    "first_sent_at": "2026-09-11T16:07:01.196105+00:00",
+    "last_sent_at": "2026-09-11T16:07:10.022355+00:00",
+    "rows": [
+      {
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "duration_s": 12074,
+        "distance_m": 229701
+      },
+      {
+        "order": [
+          0,
+          1,
+          3,
+          2,
+          4
+        ],
+        "duration_s": 15478,
+        "distance_m": 317035
+      },
+      {
+        "order": [
+          0,
+          2,
+          1,
+          3,
+          4
+        ],
+        "duration_s": 12190,
+        "distance_m": 219006
+      },
+      {
+        "order": [
+          0,
+          2,
+          3,
+          1,
+          4
+        ],
+        "duration_s": 14771,
+        "distance_m": 291563
+      },
+      {
+        "order": [
+          0,
+          3,
+          1,
+          2,
+          4
+        ],
+        "duration_s": 14979,
+        "distance_m": 310444
+      },
+      {
+        "order": [
+          0,
+          3,
+          2,
+          1,
+          4
+        ],
+        "duration_s": 14068,
+        "distance_m": 300433
+      }
+    ],
+    "best": {
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "duration_s": 12074,
+      "distance_m": 229701
+    },
+    "baseline": {
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "duration_s": 12074,
+      "distance_m": 229701
+    },
+    "saving_s": 0
+  },
+  {
+    "round": 2,
+    "first_sent_at": "2026-09-11T16:07:12.125883+00:00",
+    "last_sent_at": "2026-09-11T16:07:20.900177+00:00",
+    "rows": [
+      {
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "duration_s": 12069,
+        "distance_m": 229701
+      },
+      {
+        "order": [
+          0,
+          1,
+          3,
+          2,
+          4
+        ],
+        "duration_s": 15464,
+        "distance_m": 317035
+      },
+      {
+        "order": [
+          0,
+          2,
+          1,
+          3,
+          4
+        ],
+        "duration_s": 12126,
+        "distance_m": 219006
+      },
+      {
+        "order": [
+          0,
+          2,
+          3,
+          1,
+          4
+        ],
+        "duration_s": 14771,
+        "distance_m": 291563
+      },
+      {
+        "order": [
+          0,
+          3,
+          1,
+          2,
+          4
+        ],
+        "duration_s": 14994,
+        "distance_m": 310444
+      },
+      {
+        "order": [
+          0,
+          3,
+          2,
+          1,
+          4
+        ],
+        "duration_s": 14008,
+        "distance_m": 300433
+      }
+    ],
+    "best": {
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "duration_s": 12069,
+      "distance_m": 229701
+    },
+    "baseline": {
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "duration_s": 12069,
+      "distance_m": 229701
+    },
+    "saving_s": 0
+  }
+]
