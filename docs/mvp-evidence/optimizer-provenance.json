@@ -1,0 +1,10 @@
+{
+  "source": "Existing local DavidOcean project Spike 03 archive, migrated unchanged on 2026-09-15",
+  "files_sha256": {
+    "routepilot/optimizer.py": "8750fdbf27216586beb90ab6ae4c06c334c520387e5ed7a3b21b90596e53a1ff",
+    "routepilot/__init__.py": "6dc90347ebef690d7d004ad1fa7f3a1b8d664ee0796174f3d200b4bed9e735d2",
+    "tests/test_optimizer.py": "99d8998415adc34765c6b380ec0a53a4639c136bec0c36c1a76004aebced9b7b",
+    "tests/test_spike03_supplement.py": "ec888e79364b3c3b3c87ace5cc8e0ac3f1af167afd90eeccec098d5ac3887da6",
+    "scripts/rerun_spike03.py": "d35ba47f6211a4fac2b5c81be04867c2a8d18a6fc7a201ebf1c13f256bae6c42"
+  }
+}

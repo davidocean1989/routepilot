@@ -13,6 +13,10 @@ from app.api import router
 from app.config import Settings
 from app.database import Database
 from app.errors import AppError
+from app.services.demo import DemoMaps
+from app.services.maps import TencentMaps
+from app.services.mcp_client import TencentSessionFactory
+from app.services.trips import TripService
 
 logger = logging.getLogger('routepilot')
 
@@ -20,6 +24,7 @@ logger = logging.getLogger('routepilot')
 def create_app(settings: Settings | None = None, provider=None) -> FastAPI:
     settings = settings or Settings.from_env()
     db = Database(settings.database_path)
+    provider = provider or (DemoMaps() if settings.map_mode == 'demo' else TencentMaps(TencentSessionFactory(settings)))
 
     @asynccontextmanager
     async def lifespan(app):
@@ -28,6 +33,7 @@ def create_app(settings: Settings | None = None, provider=None) -> FastAPI:
 
     app = FastAPI(title='一趟跑完 · RoutePilot', lifespan=lifespan)
     app.state.settings, app.state.db, app.state.provider = settings, db, provider
+    app.state.trips = TripService(db, provider, settings.operation_timeout)
 
     @app.middleware('http')
     async def request_log(request: Request, call_next):

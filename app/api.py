@@ -1,8 +1,8 @@
 import secrets
 
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Header, Request
 
-from app.models import Trip, TripInput
+from app.models import Confirmation, Revision, Trip, TripInput
 
 router = APIRouter(prefix='/api')
 
@@ -23,3 +23,18 @@ def create_trip(data: TripInput, request: Request):
 @router.get('/trips/{trip_id}')
 def get_trip(trip_id: str, request: Request):
     return request.app.state.db.get(trip_id)
+
+
+@router.post('/trips/{trip_id}/resolve')
+async def resolve_trip(trip_id: str, data: Revision, request: Request, x_trip_token: str = Header(default='')):
+    return await request.app.state.trips.resolve(trip_id, x_trip_token, data.revision)
+
+
+@router.post('/trips/{trip_id}/confirm')
+def confirm_trip(trip_id: str, data: Confirmation, request: Request, x_trip_token: str = Header(default='')):
+    return request.app.state.trips.confirm(trip_id, x_trip_token, data)
+
+
+@router.post('/trips/{trip_id}/optimize')
+async def optimize_trip(trip_id: str, data: Revision, request: Request, x_trip_token: str = Header(default='')):
+    return await request.app.state.trips.optimize(trip_id, x_trip_token, data.revision)
