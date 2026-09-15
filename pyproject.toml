@@ -1,0 +1,13 @@
+[project]
+name = "routepilot"
+version = "0.1.0"
+description = "一趟跑完 — minimal driving trip optimizer"
+requires-python = ">=3.11"
+dependencies = ["fastapi==0.141.1", "uvicorn==0.53.0", "pydantic==2.13.5", "mcp==2.2.0"]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1", "httpx==0.28.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore:The anyio.abc.BlockingPortal alias is deprecated:DeprecationWarning"]
