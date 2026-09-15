@@ -67,3 +67,8 @@ class Revision(Model):
 
 class Confirmation(Revision):
     candidate_ids: list[str] = Field(min_length=4, max_length=10)
+
+
+class ClickEvent(Model):
+    event: Literal['share_click', 'navigation_click']
+    segment: int = Field(ge=0, le=8, strict=True)

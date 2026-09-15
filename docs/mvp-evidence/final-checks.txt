@@ -1,0 +1,7 @@
+Python: 59 passed; 64 subtests passed
+JavaScript: 9 passed
+JS syntax: all 6 scripts passed
+HTTP final demo: health/create/get/resolve/confirm/optimize/reload PASS
+Credential pattern scan: clean in app/, web/, .env.example
+Spike 03 optimizer and original tests/scripts byte-identical to source archive
+Live Tencent service/SDK/phone: NOT RUN (keys/device unavailable)

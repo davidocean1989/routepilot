@@ -1,12 +1,12 @@
-import json
-import logging
 import time
 from contextlib import asynccontextmanager
 from uuid import uuid4
+from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException
 
 from app.api import router
@@ -18,11 +18,12 @@ from app.services.maps import TencentMaps
 from app.services.mcp_client import TencentSessionFactory
 from app.services.trips import TripService
 
-logger = logging.getLogger('routepilot')
+from app.observability import configure_logging, log, request_id
 
 
 def create_app(settings: Settings | None = None, provider=None) -> FastAPI:
     settings = settings or Settings.from_env()
+    configure_logging()
     db = Database(settings.database_path)
     provider = provider or (DemoMaps() if settings.map_mode == 'demo' else TencentMaps(TencentSessionFactory(settings)))
 
@@ -38,24 +39,26 @@ def create_app(settings: Settings | None = None, provider=None) -> FastAPI:
     @app.middleware('http')
     async def request_log(request: Request, call_next):
         request.state.request_id = str(uuid4())
+        context_token = request_id.set(request.state.request_id)
         started = time.monotonic()
         try:
             response = await call_next(request)
         except Exception:
             # Never log exception text: upstream exceptions may contain credential URLs.
             response = error_response(request, 'internal_error', '服务暂时异常，请稍后重试。', 500)
-            logger.error(json.dumps({'event': 'internal_error', 'request_id': request.state.request_id}))
+            log('internal_error')
         response.headers['X-Request-ID'] = request.state.request_id
         response.headers['Referrer-Policy'] = 'no-referrer'
         response.headers['X-Content-Type-Options'] = 'nosniff'
         response.headers['Cache-Control'] = 'no-store'
-        logger.info(json.dumps({'event': 'request', 'request_id': request.state.request_id,
-                               'method': request.method, 'status': response.status_code,
-                               'latency_ms': round((time.monotonic() - started) * 1000)}))
+        log('request', method=request.method, status=response.status_code,
+            latency_ms=round((time.monotonic() - started) * 1000))
+        request_id.reset(context_token)
         return response
 
     @app.exception_handler(AppError)
     async def app_error(request, exc):
+        log('request_error', code=exc.code, status=exc.status)
         return error_response(request, exc.code, exc.message, exc.status)
 
     @app.exception_handler(RequestValidationError)
@@ -73,6 +76,21 @@ def create_app(settings: Settings | None = None, provider=None) -> FastAPI:
         return {'status': 'ok'}
 
     app.include_router(router)
+    web = Path(__file__).resolve().parents[1] / 'web'
+    app.mount('/web', StaticFiles(directory=web), name='web')
+
+    @app.get('/', include_in_schema=False)
+    def index_page():
+        return FileResponse(web / 'index.html')
+
+    @app.get('/confirm', include_in_schema=False)
+    def confirm_page():
+        return FileResponse(web / 'confirm.html')
+
+    @app.get('/t/{trip_id}', include_in_schema=False)
+    def result_page(trip_id: str):
+        return FileResponse(web / 'result.html')
+
     return app
 
 

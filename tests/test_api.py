@@ -74,3 +74,33 @@ def test_database_does_not_store_plain_token(client, settings):
     from pathlib import Path
     data = client.post('/api/trips', json=payload()).json()
     assert data['edit_token'].encode() not in Path(settings.database_path).read_bytes()
+
+
+def test_pages_and_static_assets(client):
+    for path in ['/', '/confirm', '/t/abc', '/web/styles.css', '/web/result.js']:
+        assert client.get(path).status_code == 200
+    assert client.get('/web/../app/config.py').status_code == 404
+
+
+def test_only_allowed_click_events(client):
+    data = client.post('/api/trips', json=payload()).json()
+    path = '/api/trips/' + data['trip']['trip_id'] + '/events'
+    assert client.post(path, json={'event': 'navigation_click', 'segment': 0}).status_code == 409
+    assert client.post(path, json={'event': 'secret', 'segment': 0}).status_code == 422
+
+
+def test_request_logs_are_enabled_and_do_not_include_secrets(client):
+    import io
+    import logging
+    logger = logging.getLogger('routepilot')
+    assert logger.isEnabledFor(logging.INFO)
+    stream = io.StringIO()
+    handler = logging.StreamHandler(stream)
+    logger.addHandler(handler)
+    try:
+        response = client.get('/health?key=SECRET_QUERY')
+    finally:
+        logger.removeHandler(handler)
+    output = stream.getvalue()
+    assert response.headers['x-request-id'] in output
+    assert 'SECRET_QUERY' not in output

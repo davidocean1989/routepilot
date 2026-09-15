@@ -1,5 +1,22 @@
 # RoutePilot｜一趟跑完
 
+## MVP Build · 本地可运行
+
+一趟跑完的最小 FastAPI + SQLite + HTML/CSS/Vanilla JS 版本位于本分支。支持创建行程、地点解析/确认、最快/最短排序、持久结果、腾讯地图 SDK 与逐段导航接口。
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install --only-binary=:all: -r requirements.lock
+ROUTEPILOT_MAP_MODE=demo .venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --no-access-log
+```
+
+打开 `http://127.0.0.1:8765/`，从杭州→上海样例开始。演示使用明确标注的2026-09-14历史数据；真实腾讯模式需配置私有服务端Key，地图展示/腾讯App跳转分别需要独立浏览器可见凭证。在线联调及真机验收尚未完成。
+
+- [运行与配置](docs/mvp-run.md)
+- [实施计划](docs/04-mvp-implementation-plan.md)
+- [验收与边界](docs/mvp-build-report.md)
+
+
 一天跑 6 个地方，怎么走最顺？
 
 RoutePilot 是 Davidocean · AI Career 项目中的多地点出行路线规划实验。

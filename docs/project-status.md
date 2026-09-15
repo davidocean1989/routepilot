@@ -42,3 +42,15 @@
 ## 同步通道记录
 
 此前连接器写入返回 403，普通 Git 推送遇到 HTTP/2 错误或超时；本机已授权 GitHub CLI 调用官方 API 的写入已验证可用。未使用聊天中曾暴露的 token。凭证不纳入仓库。
+
+## 2026-09-15｜MVP Build 第一阶段
+
+用户已明确结束继续扩展 Spike，授权进入正式研发。当前开发分支 `feat/mvp-build`，不改变上述历史证据评级。
+
+- M0 计划先行已提交：`fb6473ee21c288bcade03e0654155935eca9c01f`，见 [04 实施计划](04-mvp-implementation-plan.md)。
+- M1 FastAPI / Trip / SQLite 已完成并推送：`4d3be29137e4a5b4477750d319cb60203a0f7135`。
+- M2 腾讯 MCP 封装、矩阵、地点确认、原优化器及结果 API 已完成并推送：`2a6aaef87a2013701ec06bb67d119d9b972770a6`。
+- M3 HTML/CSS/Vanilla JS 三页、腾讯 SDK 适配、逐段 NavigationAdapter、日志错误与测试已实现。本地历史演示闭环、59 Python测试/64子案例/9前端测试通过；详细验收见 [MVP Build 报告](mvp-build-report.md)。
+- Spike 06：9月12日历史单段反馈可用；9月15日新一轮没有真机结果。见 [来源说明](mvp-evidence/spike06-source-notes.md)。没有新增 PASS。
+- 真实腾讯服务端/浏览器凭证尚未配置，在线地图与真机验收待做。未部署新后端，未更改现有导航实验站点。
+- 本阶段无景点推荐、时间窗、加油、酒店、门票等扩展。下一步只进行凭证配置后的真实联调和部署验收准备。

@@ -107,42 +107,46 @@ MCP 会话在同一异步任务内打开、调用、关闭，避免跨任务退�
 
 - [x] 阅读 00–03 和 Spike 01–04/06，记录差异与边界。
 - [x] 生成本文件，核对用户 11 项目标均映射到 M1–M3。
-- [ ] 单独提交并推送计划，记录 SHA；之后才写产品代码。
+- [x] 单独提交并推送计划，记录 SHA；之后才写产品代码。
 
 ### M1：可运行后端与 SQLite
 
-- [ ] 新建 `tests/test_api.py`，先断言 `POST /api/trips` 返回 201、再换应用实例用相同 SQLite 路径读取相同 Trip，先运行确认缺失实现失败。
-- [ ] 实现配置、模型、SQLite、应用工厂与创建/读取端点；连接按操作打开，不共享跨线程连接；JSON 严格序列化，编辑令牌只存哈希。
-- [ ] 覆盖 2/9 个途经点拒绝、空白名称、非法 objective、未知 Trip、持久化、错误结构与健康检查。
-- [ ] `python -m pytest tests/test_api.py -q` 通过；启动 uvicorn 并 HTTP 检查 health/create/get。
-- [ ] 更新运行说明、commit/push，报告 SHA、功能、测试与下一步。
+- [x] 新建 `tests/test_api.py`，先断言 `POST /api/trips` 返回 201、再换应用实例用相同 SQLite 路径读取相同 Trip，先运行确认缺失实现失败。
+- [x] 实现配置、模型、SQLite、应用工厂与创建/读取端点；连接按操作打开，不共享跨线程连接；JSON 严格序列化，编辑令牌只存哈希。
+- [x] 覆盖 2/9 个途经点拒绝、空白名称、非法 objective、未知 Trip、持久化、错误结构与健康检查。
+- [x] `python -m pytest tests/test_api.py -q` 通过；启动 uvicorn 并 HTTP 检查 health/create/get。
+- [x] 更新运行说明、commit/push，报告 SHA、功能、测试与下一步。
 
 验收示例：`POST /api/trips` 传杭州起点、乌镇/西塘/南浔三个途经点、上海终点；服务重启后 GET 内容保持，源目录参考资料不变。
 
 ### M2：地图、确认、优化与结果 API
 
-- [ ] 迁入旧优化器与测试，运行旧回归确认基线；保留源码哈希。
-- [ ] 先写 provider 契约测试：用真实 MCP 响应外壳模拟 120→成功、非法 Key、超时、缺行缺边、非对称矩阵、非零对角线、direction 分钟与差分 polyline；确认新包装层缺失时失败。
-- [ ] 实现 MCP 客户端、数据 Provider 与独立演示 Provider；演示明确引用 2026-09-14 历史矩阵。
-- [ ] 先写流程测试：未确认禁止优化、伪造候选拒绝、重复地点拒绝、过期 revision 拒绝、上游失败不写部分结果、重新打开结果相同。
-- [ ] 实现 resolve/confirm/optimize，复用 `optimize_route(0, waypoints, end, time_matrix, distance_matrix, objective)`；保存成本快照、时间范围和结果。
-- [ ] 真实历史回归：原杭州→乌镇→西塘→南浔→上海，fastest 12954 秒/229985 米；shortest 13233 秒/219289 米；不能把历史数值写作实时结果。
-- [ ] 运行完整 Python 测试，使用离线显式演示模式完成 HTTP 闭环；若提供私有环境 Key 则单独真实 smoke，不打印凭证，不假装凭证已配置。
-- [ ] 更新状态、commit/push 并报告。
+- [x] 迁入旧优化器与测试，运行旧回归确认基线；保留源码哈希。
+- [x] 先写 provider 契约测试：用真实 MCP 响应外壳模拟 120→成功、非法 Key、超时、缺行缺边、非对称矩阵、非零对角线、direction 分钟与差分 polyline；确认新包装层缺失时失败。
+- [x] 实现 MCP 客户端、数据 Provider 与独立演示 Provider；演示明确引用 2026-09-14 历史矩阵。
+- [x] 先写流程测试：未确认禁止优化、伪造候选拒绝、重复地点拒绝、过期 revision 拒绝、上游失败不写部分结果、重新打开结果相同。
+- [x] 实现 resolve/confirm/optimize，复用 `optimize_route(0, waypoints, end, time_matrix, distance_matrix, objective)`；保存成本快照、时间范围和结果。
+- [x] 真实历史回归：原杭州→乌镇→西塘→南浔→上海，fastest 12954 秒/229985 米；shortest 13233 秒/219289 米；不能把历史数值写作实时结果。
+- [x] 运行完整 Python 测试，使用离线显式演示模式完成 HTTP 闭环；若提供私有环境 Key 则单独真实 smoke，不打印凭证，不假装凭证已配置。
+- [x] 更新状态、commit/push 并报告。
 
 ### M3：三个页面、腾讯地图与导航接口
 
-- [ ] 先写前端可验证逻辑测试，检查示例输入解析、导航协议/lat,lng 编码、非法点、分享 URL 无令牌、进度不自动推进。
-- [ ] 输入页：一句话示例拆分和可编辑字段，添加/删除/上下调整 3–8 途经点，目标与终点模式。解析失败展示字段供用户修正。
-- [ ] 确认页：全部候选显示名称、城市、地址；不默认替用户确认；可回输入修改并创建新 Trip；提交完整选择后执行优化。
-- [ ] 结果页：顺序、总时间/距离、与原顺序差值、每段成本、采样提示；加载腾讯 GL SDK、编号 Marker、InfoWindow、道路 Polyline 与 fitBounds。
-- [ ] 实现 NavigationAdapter 合约与腾讯逐段原生链接；高德/百度保留可替换接口及明确未启用状态，不伪造可用链接。复制目的地、微信浏览器打开帮助、手动切段并在 URL 保留段号。
-- [ ] 处理加载中、失败重试、过期确认、分享只读恢复、地图 Key 缺失/SDK 加载失败；通过 textContent 渲染不可信文本。
-- [ ] `python -m pytest -q`、`node --test tests/web.test.cjs`、JS 语法检查、运行中 HTTP smoke；实际浏览器验证完整流程与手机宽度布局。SDK 合约测试与真实在线渲染分开记录。
-- [ ] 更新 README、project-status、mvp-build-report；最终 review、commit/push，核对远端 SHA。真机/在线地图未运行的项明确列待验收。
+- [x] 先写前端可验证逻辑测试，检查示例输入解析、导航协议/lat,lng 编码、非法点、分享 URL 无令牌、进度不自动推进。
+- [x] 输入页：一句话示例拆分和可编辑字段，添加/删除/上下调整 3–8 途经点，目标与终点模式。解析失败展示字段供用户修正。
+- [x] 确认页：全部候选显示名称、城市、地址；不默认替用户确认；可回输入修改并创建新 Trip；提交完整选择后执行优化。
+- [x] 结果页：顺序、总时间/距离、与原顺序差值、每段成本、采样提示；加载腾讯 GL SDK、编号 Marker、InfoWindow、道路 Polyline 与 fitBounds。
+- [x] 实现 NavigationAdapter 合约与腾讯逐段原生链接；高德/百度保留可替换接口及明确未启用状态，不伪造可用链接。复制目的地、微信浏览器打开帮助、手动切段并在 URL 保留段号。
+- [x] 处理加载中、失败重试、过期确认、分享只读恢复、地图 Key 缺失/SDK 加载失败；通过 textContent 渲染不可信文本。
+- [x] `python -m pytest -q`、`node --test tests/web.test.cjs`、JS 语法检查、运行中 HTTP smoke；实际浏览器验证完整流程与手机宽度布局。SDK 合约测试与真实在线渲染分开记录。
+- [x] 更新 README、project-status、mvp-build-report；最终 review、commit/push，核对远端 SHA。真机/在线地图未运行的项明确列待验收。
 
 ## 5. 完成定义
 
 无 Key 时可显式启动历史演示完成闭环；默认真实模式缺 Key 会明确报配置错误。配置合法腾讯服务端 Key 后，产品代码可调用同一已验证 MCP 工具，而非让用户手工拷贝成本。所有输入与结果落库，分享读取稳定；有明确失败路径、基础日志及可重复测试。
 
 本次软件完成不等于线上服务部署、所有地图/手机兼容、实时地图联调、真实流量性能或整个 V1 验收。每次里程碑报告必须分清自动测试、历史证据、本次真实联调与待验收事项。
+
+## 执行回填
+
+M0–M3 软件实现和本地验收完成。勾选表示相应实施步骤已处理，条件性的真实腾讯 smoke 因未配置 Key 没有执行；腾讯在线底图、道路、真机兼容和部署均不记为通过。准确测试范围见 mvp-build-report.md 与 mvp-evidence/browser-checks.md。

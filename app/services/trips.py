@@ -1,13 +1,11 @@
 import asyncio
-import json
-import logging
 import time
 
 from app.errors import AppError
 from app.models import Confirmation, Trip
 from routepilot import optimize_route
 
-logger = logging.getLogger('routepilot')
+from app.observability import log
 
 
 class TripService:
@@ -54,6 +52,7 @@ class TripService:
     async def optimize(self, trip_id, token, revision):
         trip = self.editable(trip_id, token, revision, 'confirmed')
         started = time.monotonic()
+        result, segments, warnings = None, [], []
         try:
             async with asyncio.timeout(self.timeout):
                 async with self.provider.operation() as maps:
@@ -64,28 +63,37 @@ class TripService:
                     try:
                         result = optimize_route(0, list(range(1, len(trip.input.waypoints)+1)), end,
                                                 matrix['duration_s'], matrix['distance_m'], trip.input.objective)
-                    except (ValueError, KeyError) as exc:
+                    except (ValueError, KeyError):
                         raise AppError('optimization_failed', '路线成本不完整，未生成结果，请重试。') from None
                     optimization_ms = round((time.monotonic()-tick)*1000, 2)
-                    segments, warnings = [], []
                     order = result['optimized']['order']
-                    for a, b in zip(order, order[1:]):
-                        segment = {'from_index': a, 'to_index': b,
-                                   'distance_m': matrix['distance_m'][a][b], 'duration_s': matrix['duration_s'][a][b],
-                                   'polyline': [], 'direction': None}
+                    # Build every leg before optional geometry: timing out must not drop stops.
+                    segments = [{'from_index': a, 'to_index': b,
+                                 'distance_m': matrix['distance_m'][a][b], 'duration_s': matrix['duration_s'][a][b],
+                                 'polyline': [], 'direction': None} for a, b in zip(order, order[1:])]
+                    for index, segment in enumerate(segments):
                         try:
-                            direction = await maps.direction(trip.places[a], trip.places[b])
+                            direction = await maps.direction(trip.places[segment['from_index']], trip.places[segment['to_index']])
                             segment['polyline'] = direction['polyline']
                             segment['direction'] = {k: v for k, v in direction.items() if k != 'polyline'}
                         except AppError as exc:
-                            warnings.append({'segment': len(segments), 'code': exc.code, 'message': exc.message})
-                        segments.append(segment)
-        except TimeoutError:
-            raise AppError('map_timeout', '路线查询超时，已保留确认地点，请稍后重试。', 504) from None
+                            warnings.append({'segment': index, 'code': exc.code, 'message': exc.message})
+        except (TimeoutError, AppError) as exc:
+            if result is None:
+                if isinstance(exc, AppError):
+                    raise
+                raise AppError('map_timeout', '路线查询超时，已保留确认地点，请稍后重试。', 504) from None
+            # The matrix and order are complete. Keep them when optional route detail fails.
+            code = exc.code if isinstance(exc, AppError) else 'map_timeout'
+            message = '部分道路详情未取得；已保留全部地点、访问顺序和矩阵成本。'
+            warned = {w['segment'] for w in warnings}
+            for index, segment in enumerate(segments):
+                if not segment['polyline'] and index not in warned:
+                    warnings.append({'segment': index, 'code': code, 'message': message})
         result.update(source=matrix['source'], matrix=matrix, segments=segments, warnings=warnings,
                       coordinate_system='GCJ-02', estimate_type='current_batched_snapshot')
         trip.result, trip.status = result, 'optimized'
         saved = self.db.save(trip, revision)
-        logger.info(json.dumps({'event': 'optimized', 'trip_id': trip_id, 'matrix_latency_ms': matrix_ms,
-                                'optimization_latency_ms': optimization_ms, 'chosen_route': order, 'source': matrix['source']}))
+        log('optimized', trip_id=trip_id, matrix_latency_ms=matrix_ms,
+            optimization_latency_ms=optimization_ms, chosen_route=order, source=matrix['source'])
         return saved

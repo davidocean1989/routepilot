@@ -153,3 +153,21 @@ def test_reresolve_invalidates_previous_candidates(client):
     t = client.post(path+'/resolve', json={'revision': 1}, headers=headers).json()
     r = client.post(path+'/confirm', json={'revision': t['revision'], 'candidate_ids': old_ids}, headers=headers)
     assert r.status_code == 422
+
+
+def test_geometry_timeout_preserves_completed_optimization(settings):
+    import asyncio
+    from app.services.demo import DemoMaps
+    class SlowDirections(DemoMaps):
+        async def direction(self, origin, destination):
+            await asyncio.sleep(1)
+    with TestClient(create_app(replace(settings, operation_timeout=.02), provider=SlowDirections())) as c:
+        path, headers = new(c)
+        trip = resolve_confirm(c, path, headers)
+        r = c.post(path+'/optimize', json={'revision': trip['revision']}, headers=headers)
+        assert r.status_code == 200, r.text
+        result = r.json()['result']
+        assert result['optimized']['total_duration'] == 12954
+        assert len(result['segments']) == 4
+        assert all(s['polyline'] == [] for s in result['segments'])
+        assert all(w['code'] == 'map_timeout' for w in result['warnings'])

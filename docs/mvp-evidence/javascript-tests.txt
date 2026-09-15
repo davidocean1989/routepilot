@@ -1,0 +1,17 @@
+✔ parse only supported explicit sentence and preserve original order (4.137238ms)
+✔ share URL excludes edit credentials and keeps selected segment (2.248866ms)
+✔ invalid or repeated segment rejected instead of choosing another leg (0.825769ms)
+✔ Tencent URI uses selected leg, latitude first, names encoded once (1.056863ms)
+✔ no key, invalid geometry or unsupported provider never create fake links (0.460034ms)
+✔ map geometry keeps missing roads absent, demo lines labeled separately (0.305566ms)
+✔ signed savings explain tradeoff rather than claiming both improve (0.33277ms)
+✔ SDK adapter builds numbered markers, true road geometry, bounds and escaped information (1.741445ms)
+✔ missing SDK key keeps map hidden with clear guidance (2.719732ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 155.780548

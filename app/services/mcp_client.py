@@ -8,7 +8,7 @@ from urllib.parse import urlencode
 
 from app.errors import AppError
 
-logger = logging.getLogger('routepilot')
+from app.observability import log
 
 
 def unpack_response(response) -> dict:
@@ -51,10 +51,11 @@ class ToolCaller:
             try:
                 result = await self.session.call_tool(name, arguments, read_timeout_seconds=20)
                 data = unpack_response(result)
-                logger.info(json.dumps({'event': 'map_call', 'tool': name, 'attempt': attempt,
-                                        'latency_ms': round((time.monotonic()-self.last_call)*1000)}))
+                log('map_call', tool=name, attempt=attempt,
+                    latency_ms=round((time.monotonic()-self.last_call)*1000))
                 return data
             except AppError as exc:
+                log('map_error', tool=name, code=exc.code, attempt=attempt)
                 if exc.code != 'map_rate_limited' or attempt == 2:
                     raise
             except Exception as exc:

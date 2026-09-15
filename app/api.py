@@ -2,7 +2,9 @@ import secrets
 
 from fastapi import APIRouter, Header, Request
 
-from app.models import Confirmation, Revision, Trip, TripInput
+from app.errors import AppError
+from app.observability import log
+from app.models import ClickEvent, Confirmation, Revision, Trip, TripInput
 
 router = APIRouter(prefix='/api')
 
@@ -38,3 +40,14 @@ def confirm_trip(trip_id: str, data: Confirmation, request: Request, x_trip_toke
 @router.post('/trips/{trip_id}/optimize')
 async def optimize_trip(trip_id: str, data: Revision, request: Request, x_trip_token: str = Header(default='')):
     return await request.app.state.trips.optimize(trip_id, x_trip_token, data.revision)
+
+
+@router.post('/trips/{trip_id}/events')
+def click_event(trip_id: str, data: ClickEvent, request: Request):
+    trip = request.app.state.db.get(trip_id)
+    if trip.status != 'optimized':
+        raise AppError('invalid_trip_state', '行程还没有生成结果。', 409)
+    if data.segment >= len(trip.result['segments']):
+        raise AppError('invalid_segment', '没有这个路段。', 422)
+    log(data.event, trip_id=trip_id, segment=data.segment, navigation_confirmed=False)
+    return {'recorded': True, 'navigation_confirmed': False}
